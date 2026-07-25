@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import QuickForm from "@/components/QuickForm";
 import { FAQS } from "@/lib/faqs";
 import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 
@@ -43,11 +43,15 @@ export default function FaqPage() {
               <p className="mt-3 leading-relaxed text-ink-700">{f.a}</p>
             </div>
           ))}
-          <div className="pt-4 text-center">
-            <p className="text-ink-700">Still have a question?</p>
-            <Link href="/sell" className="btn-gold mt-4">
-              Ask us while getting your offer
-            </Link>
+          <div className="rounded-2xl border border-cream-200 bg-cream-100 p-8">
+            <h2 className="font-display text-2xl font-semibold text-ink-950">
+              Ask us anything while getting your offer
+            </h2>
+            <p className="mt-3 max-w-md text-sm leading-relaxed text-ink-700">
+              Leave your details here and we will answer every question you
+              have on the same call.
+            </p>
+            <QuickForm className="mt-6" />
           </div>
         </div>
       </section>

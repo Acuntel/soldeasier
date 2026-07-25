@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import QuickForm from "@/components/QuickForm";
 import Reveal from "@/components/Reveal";
 import { breadcrumbSchema } from "@/lib/schema";
 
@@ -126,9 +126,10 @@ export default function AboutPage() {
                 pressure tactics. You get a fair number, a firm handshake, and
                 a law firm making sure everything lands cleanly.
               </p>
-              <Link href="/sell" className="btn-gold mt-8">
-                Get my cash offer
-              </Link>
+              <p className="mt-8 text-sm text-cream-100/70">
+                Tell us where the house is and we will take it from here.
+              </p>
+              <QuickForm variant="dark" layout="row" className="mt-4 max-w-3xl" />
             </div>
           </Reveal>
         </div>

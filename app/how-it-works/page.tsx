@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import QuickForm from "@/components/QuickForm";
 import Reveal from "@/components/Reveal";
 import { breadcrumbSchema } from "@/lib/schema";
 
@@ -79,10 +79,15 @@ export default function HowItWorksPage() {
             </Reveal>
           ))}
           <Reveal>
-            <div className="text-center">
-              <Link href="/sell" className="btn-gold">
-                Start the conversation
-              </Link>
+            <div className="mx-auto max-w-2xl rounded-2xl border border-cream-200 bg-cream-100 p-8 text-center">
+              <h2 className="font-display text-2xl font-semibold text-ink-950">
+                Start the conversation right here
+              </h2>
+              <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-ink-700">
+                Three fields is all it takes, and one of us will call you back
+                the same business day.
+              </p>
+              <QuickForm className="mt-6 text-left" />
             </div>
           </Reveal>
         </div>

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import QuickForm from "@/components/QuickForm";
 import Reveal from "@/components/Reveal";
 
 const ROWS: [string, string, string, string][] = [
@@ -89,9 +89,11 @@ export default function Compare() {
           </div>
         </Reveal>
         <Reveal delay={0.15}>
-          <Link href="/sell" className="btn-gold mt-12">
-            Get my cash offer
-          </Link>
+          <p className="mt-12 max-w-xl text-cream-100/70">
+            The first column takes about two minutes to find out, and it starts
+            right here.
+          </p>
+          <QuickForm variant="dark" layout="row" className="mt-5 max-w-3xl" />
         </Reveal>
       </div>
     </section>

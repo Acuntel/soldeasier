@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Phone } from "lucide-react";
+import QuickForm from "@/components/QuickForm";
 import { SITE } from "@/lib/site";
 
 export default function Hero() {
@@ -31,17 +31,16 @@ export default function Hero() {
           never pay a fee, you will never make a repair, and you choose the
           closing date that fits your life.
         </p>
-        <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-          <Link href="/sell" className="btn-gold">
-            Get my cash offer
-          </Link>
-          <a href={SITE.phoneHref} className="btn-ghost text-cream-50">
-            <Phone className="h-4 w-4" /> {SITE.phone}
+        <QuickForm variant="dark" layout="row" className="mt-10 max-w-3xl" />
+        <p className="mt-5 flex flex-wrap items-center gap-x-2 text-sm text-cream-100/60">
+          There is never any obligation, and if you would rather talk first,
+          call{" "}
+          <a
+            href={SITE.phoneHref}
+            className="inline-flex items-center gap-1.5 font-semibold text-brass-300"
+          >
+            <Phone className="h-3.5 w-3.5" /> {SITE.phone}
           </a>
-        </div>
-        <p className="mt-6 max-w-xl text-sm text-cream-100/60">
-          There is never any obligation, and the number we quote is the number
-          you receive at closing.
         </p>
       </div>
     </section>

@@ -1,10 +1,25 @@
 import Link from "next/link";
+import QuickForm from "@/components/QuickForm";
 import { NAV_LINKS, SITE } from "@/lib/site";
 import { SITUATIONS } from "@/lib/situations";
 
 export default function Footer() {
   return (
     <footer className="bg-ink-950 text-cream-100">
+      <div className="border-b border-ink-800">
+        <div className="wrap flex flex-col gap-6 py-12 lg:flex-row lg:items-center lg:justify-between">
+          <div className="max-w-md">
+            <p className="font-display text-2xl font-semibold text-cream-50">
+              Ready when you are
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-cream-100/70">
+              Leave your details anywhere on this site and the same two people
+              will call you back the same business day.
+            </p>
+          </div>
+          <QuickForm variant="dark" layout="row" className="w-full lg:max-w-2xl" />
+        </div>
+      </div>
       <div className="wrap grid gap-10 py-14 md:grid-cols-3">
         <div>
           <p className="font-display text-2xl font-semibold text-cream-50">

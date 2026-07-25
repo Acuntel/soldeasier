@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Phone } from "lucide-react";
+import QuickForm from "@/components/QuickForm";
 import { POSTS, formatDate, getPost } from "@/lib/blog";
 import { breadcrumbSchema } from "@/lib/schema";
 import { SITE } from "@/lib/site";
@@ -101,12 +102,10 @@ export default function BlogPostPage({
                 A written cash offer arrives within forty-eight hours, and the
                 closing is managed by REAL Law Group, P.C. at no cost to you.
               </p>
-              <Link href="/sell" className="btn-gold mt-5 w-full">
-                Get my cash offer
-              </Link>
+              <QuickForm className="mt-5" />
               <a
                 href={SITE.phoneHref}
-                className="mt-3 flex items-center justify-center gap-2 text-sm font-semibold text-brass-600"
+                className="mt-4 flex items-center justify-center gap-2 text-sm font-semibold text-brass-600"
               >
                 <Phone className="h-4 w-4" /> {SITE.phone}
               </a>
