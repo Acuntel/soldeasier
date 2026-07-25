@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { ArrowRight, CheckCircle2, LoaderCircle } from "lucide-react";
+import { gaEvent } from "@/lib/gtag";
 import { SITE } from "@/lib/site";
 
 type Status = "idle" | "sending" | "sent" | "error";
@@ -29,6 +30,37 @@ export default function LeadForm() {
   const [status, setStatus] = useState<Status>("idle");
   const params = useSearchParams();
   const prefilled = !!(params.get("name") || params.get("address"));
+  const finishedRef = useRef(false);
+
+  // Partial-lead recovery: a visitor who arrived from a quick form gave us
+  // name, phone, and address. If they leave before completing this form,
+  // beacon those three fields as a clearly marked partial so the contact is
+  // never lost. Fires once, and never after a successful submit.
+  const name = params.get("name") ?? "";
+  const phone = params.get("phone") ?? "";
+  const address = params.get("address") ?? "";
+  useEffect(() => {
+    if (!name || !phone || !address) return;
+    let sent = false;
+    function beacon() {
+      if (sent || finishedRef.current || document.visibilityState !== "hidden")
+        return;
+      sent = true;
+      navigator.sendBeacon(
+        "/api/lead",
+        new Blob(
+          [JSON.stringify({ partial: true, name, phone, address })],
+          { type: "application/json" },
+        ),
+      );
+    }
+    document.addEventListener("visibilitychange", beacon);
+    window.addEventListener("pagehide", beacon);
+    return () => {
+      document.removeEventListener("visibilitychange", beacon);
+      window.removeEventListener("pagehide", beacon);
+    };
+  }, [name, phone, address]);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -42,6 +74,8 @@ export default function LeadForm() {
         body: JSON.stringify(data),
       });
       if (!res.ok) throw new Error(await res.text());
+      finishedRef.current = true;
+      gaEvent("generate_lead", { form: "full" });
       setStatus("sent");
       form.reset();
     } catch {

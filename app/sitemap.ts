@@ -12,6 +12,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/about", priority: 0.7 },
     { path: "/faq", priority: 0.7 },
     { path: "/blog", priority: 0.7 },
+    { path: "/es", priority: 0.8 },
+    { path: "/pl", priority: 0.8 },
   ];
   return [
     ...staticPages.map((p) => ({

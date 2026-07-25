@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
-import Nav from "@/components/Nav";
+import Analytics from "@/components/Analytics";
 import Footer from "@/components/Footer";
+import MobileBar from "@/components/MobileBar";
+import Nav from "@/components/Nav";
 import { SITE } from "@/lib/site";
 import { baseGraph } from "@/lib/schema";
 import "./globals.css";
@@ -29,15 +31,19 @@ export const metadata: Metadata = {
     "sell inherited house Illinois",
     "stop foreclosure sell house Illinois",
   ],
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    languages: { en: "/", es: "/es", pl: "/pl" },
+  },
   openGraph: {
     type: "website",
     siteName: SITE.name,
     url: SITE.url,
     title: "Sell Your House Fast for Cash in Chicagoland | SoldEasier",
     description: SITE.description,
+    images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image" },
+  twitter: { card: "summary_large_image", images: ["/og.png"] },
   robots: { index: true, follow: true },
 };
 
@@ -56,6 +62,9 @@ export default function RootLayout({
         <Nav />
         <main>{children}</main>
         <Footer />
+        <div className="h-16 md:hidden" aria-hidden />
+        <MobileBar />
+        <Analytics />
       </body>
     </html>
   );

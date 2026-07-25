@@ -66,6 +66,15 @@ export default function Footer() {
                 Privacy Policy
               </Link>
             </li>
+            <li className="pt-2">
+              <Link href="/es" className="transition hover:text-brass-300">
+                Español
+              </Link>
+              {" · "}
+              <Link href="/pl" className="transition hover:text-brass-300">
+                Polski
+              </Link>
+            </li>
           </ul>
         </div>
 
