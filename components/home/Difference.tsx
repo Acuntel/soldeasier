@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 const POINTS = [
   "You keep one point of contact from the first call through closing day, and it is always one of us.",
   "The offer we put in writing is the exact amount you receive, with no last-minute renegotiation.",
-  "A licensed Illinois real estate law firm prepares and manages your entire closing from start to finish.",
+  "We prepare and manage your entire closing from start to finish, so nothing lands on your plate.",
   "Liens, probate, title tangles, and foreclosure deadlines are all handled by people who resolve them every week.",
 ];
 

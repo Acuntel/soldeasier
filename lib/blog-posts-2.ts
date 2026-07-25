@@ -2,8 +2,8 @@ import type { BlogPost } from "./blog";
 
 export const POSTS_2: BlogPost[] = [
   {
-    slug: "cash-buyer-vs-listing-with-an-agent",
-    title: "Cash Buyer or Listing Agent? An Honest Comparison for Sellers",
+    slug: "direct-buyer-vs-listing-with-an-agent",
+    title: "Direct Buyer or Listing Agent? An Honest Comparison for Sellers",
     date: "2026-06-09",
     category: "The Process",
     minutes: 5,
@@ -16,22 +16,22 @@ export const POSTS_2: BlogPost[] = [
       },
       {
         h: "Where the listing math quietly erodes",
-        p: "The gross price on a listing is not the number that reaches your pocket. Commissions, seller credits after inspection, months of carrying costs, and the repairs needed just to go live all come out before you see a dollar. On a dated or distressed home, sellers are routinely surprised to find the net from a clean cash offer landing within a few points of the listing net, with none of the risk.",
+        p: "The gross price on a listing is not the number that reaches your pocket. Commissions, seller credits after inspection, months of carrying costs, and the repairs needed just to go live all come out before you see a dollar. On a dated or distressed home, sellers are routinely surprised to find the net from a clean direct offer landing within a few points of the listing net, with none of the risk.",
       },
       {
         h: "Certainty is the third factor people forget",
-        p: "Roughly one in five financed contracts nationally hits trouble before closing, usually through financing or appraisal problems. A collapsed deal costs you a month and often stigmatizes the listing when it returns to market. Cash removes that failure mode entirely, which matters enormously when a foreclosure date or a family deadline sits behind the sale.",
+        p: "Roughly one in five financed contracts nationally hits trouble before closing, usually through financing or appraisal problems. A collapsed deal costs you a month and often stigmatizes the listing when it returns to market. A buyer with no financing removes that failure mode entirely, which matters enormously when a foreclosure date or a family deadline sits behind the sale.",
       },
     ],
   },
   {
-    slug: "red-flags-when-selling-to-a-cash-buyer",
-    title: "Seven Red Flags When Selling Your House to a Cash Buyer",
+    slug: "red-flags-when-selling-to-a-direct-buyer",
+    title: "Seven Red Flags When Selling Your House to a Direct Buyer",
     date: "2026-06-02",
     category: "The Process",
     minutes: 5,
     excerpt:
-      "Most cash-buying horror stories trace back to the same handful of tricks, and every one of them is visible before you sign.",
+      "Most direct-sale horror stories trace back to the same handful of tricks, and every one of them is visible before you sign.",
     sections: [
       {
         h: "The offer that shrinks after you commit",
@@ -43,7 +43,7 @@ export const POSTS_2: BlogPost[] = [
       },
       {
         h: "Pressure, vagueness, and missing paperwork",
-        p: "Legitimate buyers put everything in writing, welcome your attorney, and give you room to decide. Walk away from anyone pushing a same-day signature, refusing to show valuation math, or treating the involvement of counsel as an obstacle. The good operators in this market survive on reputation, and reputable behavior is visible from the first conversation.",
+        p: "Legitimate buyers put everything in writing, welcome anyone you want reviewing the deal, and give you room to decide. Walk away from anyone pushing a same-day signature, refusing to show valuation math, or treating outside review as an obstacle. The good operators in this market survive on reputation, and reputable behavior is visible from the first conversation.",
       },
     ],
   },
@@ -51,7 +51,7 @@ export const POSTS_2: BlogPost[] = [
     slug: "selling-the-house-during-a-divorce",
     title: "Selling the House During a Divorce in Illinois, Done Cleanly",
     date: "2026-05-26",
-    category: "Legal",
+    category: "The Paperwork",
     minutes: 4,
     excerpt:
       "The marital home is usually the biggest asset in the case, and how you sell it shapes both the settlement and your sanity.",
@@ -62,11 +62,11 @@ export const POSTS_2: BlogPost[] = [
       },
       {
         h: "Why speed and privacy matter more than usual",
-        p: "Every additional month of co-owning a house with a former spouse is a month of shared mortgage payments, shared decisions, and shared friction. A private cash sale with no showings, no yard sign, and no public listing compresses that period into weeks. Both attorneys receive the same written offer, which keeps the process transparent to everyone with a stake in it.",
+        p: "Every additional month of co-owning a house with a former spouse is a month of shared mortgage payments, shared decisions, and shared friction. A private direct sale with no showings, no yard sign, and no public listing compresses that period into weeks. Everyone advising each side receives the same written offer, which keeps the process transparent to everyone with a stake in it.",
       },
       {
         h: "The closing table is where it becomes final",
-        p: "A well-run divorce sale ends with proceeds split at the closing table exactly as the judgment directs, rather than passing through either spouse's personal account. An attorney-managed closing handles that distribution as a routine matter and papers every step. When the wire clears, both parties genuinely get to start over.",
+        p: "A well-run divorce sale ends with proceeds split at the closing table exactly as the judgment directs, rather than passing through either spouse's personal account. A properly managed closing handles that distribution as a routine matter and papers every step. When the wire clears, both parties genuinely get to start over.",
       },
     ],
   },
@@ -74,7 +74,7 @@ export const POSTS_2: BlogPost[] = [
     slug: "what-happens-to-liens-and-code-violations",
     title: "What Happens to Liens and Code Violations When You Sell",
     date: "2026-05-19",
-    category: "Legal",
+    category: "The Paperwork",
     minutes: 4,
     excerpt:
       "Liens and village citations feel like walls, but in a properly run closing they are simply line items that get paid and released.",
@@ -85,34 +85,11 @@ export const POSTS_2: BlogPost[] = [
       },
       {
         h: "Village citations and the compliance dance",
-        p: "Chicagoland suburbs enforce property codes aggressively, and open violations or required inspections can genuinely complicate an ordinary sale. Some villages demand repairs or escrows before issuing transfer stamps. This is precisely where an attorney-run closing earns its keep, because negotiating with a village and structuring around a citation is legal work rather than paperwork.",
+        p: "Chicagoland suburbs enforce property codes aggressively, and open violations or required inspections can genuinely complicate an ordinary sale. Some villages demand repairs or escrows before issuing transfer stamps. This is precisely where an experienced closing team earns its keep, because negotiating with a village and structuring around a citation takes real know-how rather than routine paperwork.",
       },
       {
         h: "When the debts exceed the value",
         p: "If the payoff stack is larger than the home is worth, the sale becomes a short sale and requires lender consent to release the mortgage for less than the balance. Lenders approve these routinely when the file is presented properly, because they lose more at auction. It is slower than a standard closing, but it beats foreclosure on every measure that matters to you.",
-      },
-    ],
-  },
-  {
-    slug: "do-you-need-an-attorney-to-sell-a-house-in-illinois",
-    title: "Do You Need an Attorney to Sell a House in Illinois?",
-    date: "2026-05-12",
-    category: "Legal",
-    minutes: 4,
-    excerpt:
-      "Illinois does not require a lawyer at your closing, but the local custom exists for reasons that become obvious the first time something goes wrong.",
-    sections: [
-      {
-        h: "The law versus the local custom",
-        p: "No Illinois statute forces a home seller to hire an attorney, and a determined owner can legally sign everything alone. The custom in Chicagoland, however, is attorney representation on both sides of nearly every residential closing, and title companies here are built around that expectation. The custom survives because deeds, payoffs, and municipal requirements punish small mistakes with expensive consequences.",
-      },
-      {
-        h: "What the attorney actually does for a seller",
-        p: "Seller-side counsel reviews the contract during the attorney-modification period, orders payoffs, clears title objections, prepares the deed and transfer declarations, and walks the closing numbers line by line. Most of that work is invisible when it goes well, which is exactly the point. The fee for all of it is typically a few hundred dollars, which is the cheapest insurance in the entire transaction.",
-      },
-      {
-        h: "How SoldEasier changes this equation",
-        p: "When you sell to us, the closing is prepared and managed by REAL Law Group, P.C. as part of the purchase, so the legal machinery comes built in rather than billed separately. You remain fully welcome to bring your own counsel, and we coordinate with them directly whenever you do. Either way, nobody at the table is improvising the paperwork.",
       },
     ],
   },

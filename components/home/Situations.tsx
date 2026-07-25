@@ -6,7 +6,7 @@ const SITUATIONS = [
   {
     href: "/stop-foreclosure",
     title: "Facing foreclosure",
-    body: "If you are behind on payments or holding a lis pendens, a fast cash sale can stop the clock and protect your equity before auction.",
+    body: "If you are behind on payments or holding a lis pendens, a fast direct sale can stop the clock and protect your equity before auction.",
   },
   {
     href: "/sell-inherited-house",

@@ -1,7 +1,7 @@
 export const FAQS = [
   {
     q: "How fast can you buy my house?",
-    a: "We can close in as little as two weeks from the day you accept our offer, and because we pay cash there is no lender who can delay or kill the deal. If you need more time, we simply set the closing on whatever date works best for you.",
+    a: "We can close in as little as two weeks from the day you accept our offer, and because we buy without financing there is no lender who can delay or kill the deal. If you need more time, we simply set the closing on whatever date works best for you.",
   },
   {
     q: "Do you charge any fees or commissions?",
@@ -12,20 +12,20 @@ export const FAQS = [
     a: "Selling as-is means you fix nothing, clean nothing, and stage nothing before closing. Take the belongings you want and leave everything else behind, because we handle repairs and cleanout after closing. The condition is already priced into our offer, so there is never a renegotiation after an inspection.",
   },
   {
-    q: "How do you calculate your cash offer?",
+    q: "How do you calculate your offer?",
     a: "We start with what your home would sell for fully updated, based on recent nearby sales. We then subtract the real cost of the work it needs along with our margin, and we show you that math in writing so you can compare it against listing with an agent or any other offer.",
   },
   {
     q: "Who actually handles the closing?",
-    a: "Every SoldEasier closing is prepared and managed by REAL Law Group, P.C., a real estate law firm in Elmhurst, Illinois led by our co-founder Vincent Incopero. Title, payoff letters, lien releases, and municipal requirements are all handled by the firm, and you are always welcome to bring your own attorney as well.",
+    a: "Every SoldEasier closing is prepared and managed by our own team from start to finish. Title, payoff letters, lien releases, and municipal requirements are all handled for you, and anyone you trust is always welcome to review the paperwork with you.",
   },
   {
     q: "Can you help if I am in foreclosure?",
-    a: "Foreclosure timelines are one of our specialties, and in Illinois you can generally sell your home up until the sheriff's sale is confirmed. Selling for cash before judgment usually protects far more of your equity than letting the home go to auction, and we can also evaluate short sales and deed-in-lieu options.",
+    a: "Foreclosure timelines are one of our specialties, and in Illinois you can generally sell your home up until the sheriff's sale is confirmed. Selling before judgment usually protects far more of your equity than letting the home go to auction, and we can also evaluate short sales and deed-in-lieu options.",
   },
   {
     q: "Can you buy a house that is stuck in probate?",
-    a: "Our law firm practices estate work alongside real estate, so probate filings, executor questions, and heir coordination are all handled in-house while the sale moves forward. Inherited homes, including ones still full of belongings, are among the most common properties we buy.",
+    a: "Probate filings, executor questions, and heir coordination are all handled alongside the sale, so nothing stalls while the court process moves forward. Inherited homes, including ones still full of belongings, are among the most common properties we buy.",
   },
   {
     q: "Do I need a real estate agent to sell to you?",

@@ -8,7 +8,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Insights on Selling a House in Chicagoland",
   description:
-    "Straight answers on foreclosure timelines, probate sales, as-is offers, and the real math of selling a Chicagoland house for cash, written by the buyers themselves.",
+    "Straight answers on foreclosure timelines, probate sales, as-is offers, and the real math of selling a Chicagoland house directly, written by the buyers themselves.",
   alternates: { canonical: "/blog" },
 };
 
@@ -37,7 +37,7 @@ export default function BlogIndexPage() {
           <div className="mt-7 h-px w-24 bg-brass-400/60" />
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-cream-100/80">
             Everything here is written by the two people who actually buy the
-            houses, covering the timelines, the legal work, and the honest math
+            houses, covering the timelines, the paperwork, and the honest math
             most buyers would rather keep vague.
           </p>
         </div>

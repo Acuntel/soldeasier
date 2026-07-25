@@ -22,9 +22,9 @@ export function generateMetadata({
   if (!t) return {};
   return {
     title: {
-      absolute: `Sell My House Fast in ${t.name}, IL | Cash Offer in 48 Hours | SoldEasier`,
+      absolute: `Sell My House Fast in ${t.name}, IL | Immediate Offer in 48 Hours | SoldEasier`,
     },
-    description: `We buy houses for cash in ${t.name}, Illinois. Real ${t.name} transfer-stamp costs, village requirements handled by a law firm, no fees, and a written offer in 48 hours.`,
+    description: `We buy houses directly in ${t.name}, Illinois. Real ${t.name} transfer-stamp costs, every village requirement handled for you, no fees, and a written offer in 48 hours.`,
     alternates: { canonical: `/sell-my-house-fast/${t.slug}` },
   };
 }
@@ -86,10 +86,9 @@ export default function TownPage({ params }: { params: { town: string } }) {
                 {t.taxOn300k}
               </p>
               <p className="mt-4 text-sm leading-relaxed text-ink-500">
-                Rates are set by ordinance and change occasionally. REAL Law
-                Group, P.C. confirms the exact figures on your closing
-                statement, so the number you see in our offer is the number
-                that happens.
+                Rates are set by ordinance and change occasionally. We confirm
+                the exact figures on your closing statement, so the number
+                you see in our offer is the number that happens.
               </p>
             </section>
 
@@ -100,8 +99,8 @@ export default function TownPage({ params }: { params: { town: string } }) {
               <p className="mt-4 leading-relaxed text-ink-700">
                 Before a deed can be recorded, {t.name} requires the following
                 from a seller, and any one of them can stall a traditional
-                closing when it surfaces late. When you sell to us, our law
-                firm runs this entire checklist as part of the purchase.
+                closing when it surfaces late. When you sell to us, we run this
+                entire checklist for you as part of the purchase.
               </p>
               <ul className="mt-5 space-y-3 text-ink-800">
                 {t.requirements.map((r) => (
@@ -115,16 +114,15 @@ export default function TownPage({ params }: { params: { town: string } }) {
 
             <section>
               <h2 className="font-display text-2xl font-semibold text-ink-950 sm:text-3xl">
-                How a cash sale works here
+                How a direct sale works here
               </h2>
               <p className="mt-4 leading-relaxed text-ink-700">
                 Tell us about the property and one of us calls you back the
                 same business day. We walk the home once, usually within
-                forty-eight hours, and hand you a written cash offer with the
-                math shown, including every {t.name} stamp and fee, so the
-                number you compare is your true net. Accept whenever you are
-                ready, and REAL Law Group, P.C. prepares the entire closing on
-                the date you choose.
+                forty-eight hours, and hand you a written offer with the math
+                shown, including every {t.name} stamp and fee, so the number
+                you compare is your true net. Accept whenever you are ready,
+                and we prepare the entire closing on the date you choose.
               </p>
             </section>
 
@@ -146,11 +144,11 @@ export default function TownPage({ params }: { params: { town: string } }) {
           <aside className="lg:sticky lg:top-24 lg:self-start">
             <div className="rounded-2xl border border-cream-200 bg-cream-100 p-7">
               <h3 className="font-display text-xl font-semibold text-ink-950">
-                Get your {t.name} cash offer
+                Get your {t.name} offer
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-ink-700">
                 Three fields now, a real number within forty-eight hours, and
-                every village requirement handled by our law firm.
+                every village requirement handled for you.
               </p>
               <QuickForm className="mt-5" />
               <a

@@ -12,7 +12,7 @@ export type Town = {
 
 // Municipal transfer-tax and point-of-sale data verified July 2026 against
 // ATG (Attorneys' Title Guaranty Fund) municipal ordinance summaries and
-// village websites. Rates change occasionally; REAL Law Group confirms the
+// village websites. Rates change occasionally; we confirm the
 // exact figures on every closing statement.
 export const TOWNS: Town[] = [
   {
@@ -33,7 +33,7 @@ export const TOWNS: Town[] = [
     faqs: [
       {
         q: "Does Elmhurst have a real estate transfer tax?",
-        a: "Elmhurst charges $1.50 per $1,000 of the sale price, paid by the seller, in addition to the standard state and DuPage County transfer taxes. The city also requires the stamp application 72 hours in advance, a paid final water bill, and a sump pump inspection on single family homes. When you sell to us, our law firm handles that entire checklist.",
+        a: "Elmhurst charges $1.50 per $1,000 of the sale price, paid by the seller, in addition to the standard state and DuPage County transfer taxes. The city also requires the stamp application 72 hours in advance, a paid final water bill, and a sump pump inspection on single family homes. When you sell to us, we handle that entire checklist for you.",
       },
       {
         q: "How fast can you buy my house in Elmhurst?",
@@ -76,14 +76,14 @@ export const TOWNS: Town[] = [
       "On a $300,000 sale you pay no village transfer tax, only $300 in state and $150 in DuPage County transfer tax.",
     requirements: ["A final water meter reading before the transfer"],
     intro:
-      "Lombard is one of the easiest towns in DuPage County to sell in, with no municipal transfer tax and no village inspection standing between you and your closing. That makes it a place where a cash sale can move at full speed, and we regularly close Lombard homes in two to three weeks.",
+      "Lombard is one of the easiest towns in DuPage County to sell in, with no municipal transfer tax and no village inspection standing between you and your closing. That makes it a place where a direct sale can move at full speed, and we regularly close Lombard homes in two to three weeks.",
     faqs: [
       {
         q: "Does Lombard have a real estate transfer tax?",
         a: "Lombard charges no municipal transfer tax. You pay only the standard Illinois and DuPage County transfer taxes, which together come to $1.50 per $1,000 of the sale price, and the village asks only for a final water meter reading.",
       },
       {
-        q: "How fast can a Lombard house close for cash?",
+        q: "How fast can a Lombard house close?",
         a: "With no village inspection and no municipal stamp process, Lombard closings are among the fastest we do. With clear title we can realistically close in two weeks.",
       },
     ],
@@ -110,7 +110,7 @@ export const TOWNS: Town[] = [
       },
       {
         q: "What inspections does Addison require before a sale?",
-        a: "Addison requires a sump pump inspection, a sewer inspection, and a permit release from Community Development before it issues transfer stamps. Open permits on the property surface at this stage and stop many traditional sales. Our law firm resolves them as part of the closing.",
+        a: "Addison requires a sump pump inspection, a sewer inspection, and a permit release from Community Development before it issues transfer stamps. Open permits on the property surface at this stage and stop many traditional sales. We resolve them as part of the closing.",
       },
     ],
   },
@@ -158,7 +158,7 @@ export const TOWNS: Town[] = [
     faqs: [
       {
         q: "What does Bellwood require before I can sell my house?",
-        a: "Bellwood requires a $5 per $1,000 transfer stamp paid by the seller, a village inspection with a $175 fee, a sidewalk inspection, a paid final water bill, and an original plat of survey with your notarized deed. Missing paperwork stalls many Bellwood closings, and our law firm assembles all of it as part of the purchase.",
+        a: "Bellwood requires a $5 per $1,000 transfer stamp paid by the seller, a village inspection with a $175 fee, a sidewalk inspection, a paid final water bill, and an original plat of survey with your notarized deed. Missing paperwork stalls many Bellwood closings, and we assemble all of it as part of the purchase.",
       },
       {
         q: "What if I do not have a plat of survey for my Bellwood home?",
@@ -264,7 +264,7 @@ export const TOWNS: Town[] = [
       },
       {
         q: "Does Oak Park require an inspection before selling a house?",
-        a: "Oak Park requires no pre sale village inspection, only the transfer stamp and a final water and sewer reading. That makes it one of the simpler Cook County villages to close in, and a cash sale can move quickly here.",
+        a: "Oak Park requires no pre sale village inspection, only the transfer stamp and a final water and sewer reading. That makes it one of the simpler Cook County villages to close in, and a direct sale can move quickly here.",
       },
     ],
   },

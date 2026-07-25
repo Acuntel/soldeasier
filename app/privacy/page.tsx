@@ -25,9 +25,9 @@ export default function PrivacyPage() {
         <p>
           We do not sell, rent, or share your information with third-party
           marketers or lead resellers. Your details are shared only with the
-          SoldEasier principals and, when a transaction proceeds, with REAL Law
-          Group, P.C. and the parties necessary to complete your closing (such
-          as the title company).
+          SoldEasier principals and, when a transaction proceeds, with the
+          parties necessary to complete your closing (such as the title
+          company).
         </p>
         <p>
           Our website uses only the analytics strictly necessary to operate and

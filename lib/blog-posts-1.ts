@@ -2,25 +2,25 @@ import type { BlogPost } from "./blog";
 
 export const POSTS_1: BlogPost[] = [
   {
-    slug: "how-fast-can-you-sell-a-house-for-cash-in-chicagoland",
-    title: "How Fast Can You Really Sell a House for Cash in Chicagoland?",
+    slug: "how-fast-can-you-sell-a-house-in-chicagoland",
+    title: "How Fast Can You Really Sell a House in Chicagoland?",
     date: "2026-07-21",
     category: "The Process",
     minutes: 4,
     excerpt:
-      "Two weeks is a real number when the buyer pays cash and the closing is run by a law firm, and here is exactly where that time goes.",
+      "Two weeks is a real number when the buyer needs no financing and runs the closing themselves, and here is exactly where that time goes.",
     sections: [
       {
         h: "Where the time actually goes in a home sale",
-        p: "A traditional sale spends most of its calendar on things that have nothing to do with you, including loan underwriting, appraisal scheduling, and inspection negotiations. When the buyer pays cash, all of that friction disappears from the timeline at once. What remains is the title search, the payoff letters, and the closing documents, and those steps can move in days when the people running them do closings for a living.",
+        p: "A traditional sale spends most of its calendar on things that have nothing to do with you, including loan underwriting, appraisal scheduling, and inspection negotiations. When the buyer needs no financing, all of that friction disappears from the timeline at once. What remains is the title search, the payoff letters, and the closing documents, and those steps can move in days when the people running them do closings for a living.",
       },
       {
         h: "The two-week closing, step by step",
-        p: "In a typical SoldEasier purchase, the walkthrough happens within forty-eight hours of your first call, and the written offer arrives the same day. Once you accept, REAL Law Group, P.C. orders title immediately and requests payoff figures from your lender within the first two days. Title on a Chicagoland home usually returns inside a week, and as soon as it is clear we can schedule the closing on any date you choose.",
+        p: "In a typical SoldEasier purchase, the walkthrough happens within forty-eight hours of your first call, and the written offer arrives the same day. Once you accept, we order title immediately and request payoff figures from your lender within the first two days. Title on a Chicagoland home usually returns inside a week, and as soon as it is clear we can schedule the closing on any date you choose.",
       },
       {
         h: "When you should actually take longer",
-        p: "Speed is an option rather than a requirement, and plenty of our sellers pick a closing date six or eight weeks out. Families clearing an inherited home often want a full month, and sellers timing a purchase on the other side sometimes want the certainty of a signed contract with a distant date. The right timeline is the one that fits your life, because cash keeps every option open.",
+        p: "Speed is an option rather than a requirement, and plenty of our sellers pick a closing date six or eight weeks out. Families clearing an inherited home often want a full month, and sellers timing a purchase on the other side sometimes want the certainty of a signed contract with a distant date. The right timeline is the one that fits your life, because a buyer without financing keeps every option open.",
       },
     ],
   },
@@ -42,8 +42,8 @@ export const POSTS_1: BlogPost[] = [
         p: "Before judgment is entered, you can reinstate the loan, negotiate with the lender, or sell the home and pay the debt off entirely. Illinois law also provides a redemption period after judgment, which generally gives you until three months after judgment or seven months after service, whichever is later. Selling during these windows protects your equity, because a sheriff's sale rarely brings anything close to market value.",
       },
       {
-        h: "Why a cash sale beats the auction almost every time",
-        p: "An auction pays the lender first and hands you whatever scraps remain, while a private cash sale prices the whole property and hands you the difference after payoff. A buyer who can close in two weeks fits inside almost any foreclosure timeline when you act before the sale is confirmed. The worst move is waiting, because options fall away at every stage of the case.",
+        h: "Why a direct sale beats the auction almost every time",
+        p: "An auction pays the lender first and hands you whatever scraps remain, while a private direct sale prices the whole property and hands you the difference after payoff. A buyer who can close in two weeks fits inside almost any foreclosure timeline when you act before the sale is confirmed. The worst move is waiting, because options fall away at every stage of the case.",
       },
     ],
   },
@@ -54,11 +54,11 @@ export const POSTS_1: BlogPost[] = [
     category: "Probate",
     minutes: 5,
     excerpt:
-      "Probate, heirs, and a house full of memories make inherited sales the hardest kind, unless the legal work and the purchase come from one team.",
+      "Probate, heirs, and a house full of memories make inherited sales the hardest kind, unless the paperwork and the purchase come from one team.",
     sections: [
       {
         h: "First, figure out who can actually sign",
-        p: "Before an inherited home can sell, someone must hold the legal authority to sign the deed. If the home sat in a trust or transfer-on-death instrument, that authority may already exist, while homes titled solely in the deceased's name usually require probate. Opening an estate in an Illinois county court sounds intimidating, but with counsel handling the filings it becomes a manageable and predictable process.",
+        p: "Before an inherited home can sell, someone must hold the legal authority to sign the deed. If the home sat in a trust or transfer-on-death instrument, that authority may already exist, while homes titled solely in the deceased's name usually require probate. Opening an estate in an Illinois county court sounds intimidating, but with experienced hands guiding the filings it becomes a manageable and predictable process.",
       },
       {
         h: "The house full of belongings problem",
@@ -66,7 +66,7 @@ export const POSTS_1: BlogPost[] = [
       },
       {
         h: "Keeping the peace between heirs",
-        p: "Money disagreements between siblings sink more estate sales than any court ever does. One written cash offer that every heir can read, with the valuation math shown, gives the family a shared set of facts instead of competing opinions. When the same legal team also manages the estate side, questions get answered once instead of three different ways.",
+        p: "Money disagreements between siblings sink more estate sales than any court ever does. One written offer that every heir can read, with the valuation math shown, gives the family a shared set of facts instead of competing opinions. When the same team also coordinates the estate side, questions get answered once instead of three different ways.",
       },
     ],
   },
@@ -94,17 +94,17 @@ export const POSTS_1: BlogPost[] = [
     ],
   },
   {
-    slug: "how-cash-offers-are-calculated",
-    title: "How a Real Cash Offer on Your House Is Actually Calculated",
+    slug: "how-immediate-offers-are-calculated",
+    title: "How a Real Offer on Your House Is Actually Calculated",
     date: "2026-06-23",
     category: "The Process",
     minutes: 4,
     excerpt:
-      "A legitimate cash offer is arithmetic you can check, starting from the updated value of your home and working backward through real costs.",
+      "A legitimate immediate offer is arithmetic you can check, starting from the updated value of your home and working backward through real costs.",
     sections: [
       {
         h: "Start with the after-repair value",
-        p: "Every honest cash offer begins with what your home would sell for fully updated, which professionals call the after-repair value. That number comes from recent sales of comparable homes in your immediate area, not from a formula or a national average. Ask any buyer to show you the sales they used, because a buyer who will not show comps is hiding the most important number in the deal.",
+        p: "Every honest offer begins with what your home would sell for fully updated, which professionals call the after-repair value. That number comes from recent sales of comparable homes in your immediate area, not from a formula or a national average. Ask any buyer to show you the sales they used, because a buyer who will not show comps is hiding the most important number in the deal.",
       },
       {
         h: "Subtract the real cost of the work",

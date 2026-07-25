@@ -59,7 +59,7 @@ export default function QuickForm({
           className={field}
         />
         <button type="submit" className="btn-gold !px-6">
-          Get my cash offer <ArrowRight className="h-4 w-4" />
+          Get my offer <ArrowRight className="h-4 w-4" />
         </button>
       </div>
     </form>

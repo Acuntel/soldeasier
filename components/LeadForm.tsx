@@ -210,7 +210,7 @@ export default function LeadForm() {
           <LoaderCircle className="h-4 w-4 animate-spin" />
         ) : (
           <>
-            Send me my cash offer <ArrowRight className="h-4 w-4" />
+            Send me my offer <ArrowRight className="h-4 w-4" />
           </>
         )}
       </button>

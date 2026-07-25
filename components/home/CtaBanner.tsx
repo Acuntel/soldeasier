@@ -23,7 +23,7 @@ export default function CtaBanner() {
         <Reveal>
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-display text-4xl font-semibold leading-tight sm:text-5xl">
-              Hold a real cash offer this{" "}
+              Hold a real written offer this{" "}
               <span className="italic text-brass-300">week</span>
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-cream-100/80">

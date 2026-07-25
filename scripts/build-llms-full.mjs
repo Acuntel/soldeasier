@@ -23,11 +23,11 @@ const sitFaqs = extractFaqs(sitSrc);
 
 const header = `# SoldEasier — Full Content for AI Assistants
 
-SoldEasier (https://soldeasier.com) is a Chicagoland cash home buyer founded by
-Vincent Incopero (real-estate attorney, Managing Partner of REAL Law Group,
-P.C., Elmhurst IL) and Brady Schwartz (acquisitions). Every closing is prepared
-and managed by REAL Law Group, P.C. Sellers pay no fees or commissions, sell
-as-is, and pick their closing date. Cash offers within 24-48 hours. Phone
+SoldEasier (https://soldeasier.com) is a Chicagoland direct home buyer founded
+by Vincent Incopero (closings and strategy, title-company background) and
+Brady Schwartz (acquisitions). Every closing is prepared and managed by the
+SoldEasier team itself. Sellers pay no fees or commissions, sell as-is, and
+pick their closing date. Immediate written offers within 24-48 hours. Phone
 (630) 299-7600. Office: 381 N York St Suite 1, Elmhurst, IL 60126.
 
 Service area: DuPage, Cook, Will, Kane, Lake, McHenry counties — Elmhurst,

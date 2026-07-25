@@ -18,7 +18,7 @@ export default function Hero() {
 
       <div className="wrap relative pb-24 pt-40">
         <p className="eyebrow mb-6 !text-brass-300">
-          Attorney-backed home buying across Chicagoland
+          Direct home buying across Chicagoland
         </p>
         <h1 className="max-w-4xl font-display text-4xl font-semibold leading-[1.12] sm:text-5xl md:text-6xl">
           The easier way to sell your{" "}
@@ -26,10 +26,10 @@ export default function Hero() {
         </h1>
         <div className="mt-7 h-px w-24 bg-brass-400/60" />
         <p className="mt-7 max-w-2xl text-lg leading-relaxed text-cream-100/85">
-          We make fair cash offers on Chicagoland homes, and a real estate law
-          firm manages every detail of your closing at no cost to you. You will
-          never pay a fee, you will never make a repair, and you choose the
-          closing date that fits your life.
+          We make fair, immediate offers on Chicagoland homes and manage every
+          detail of your closing at no cost to you. You will never pay a fee,
+          you will never make a repair, and you choose the closing date that
+          fits your life.
         </p>
         <QuickForm variant="dark" layout="row" className="mt-10 max-w-3xl" />
         <p className="mt-5 flex flex-wrap items-center gap-x-2 text-sm text-cream-100/60">

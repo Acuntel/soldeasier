@@ -25,7 +25,7 @@ export default function MobileBar() {
           href="/sell#offer"
           className="flex flex-1 items-center justify-center rounded-full bg-brass-500 py-3 text-sm font-semibold text-ink-950"
         >
-          Get my cash offer
+          Get my offer
         </Link>
       </div>
     </div>

@@ -6,9 +6,9 @@ import { SITE } from "@/lib/site";
 import { faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Kupimy Twój Dom za Gotówkę w Chicago i na Przedmieściach",
+  title: "Kupimy Twój Dom od Ręki w Chicago i na Przedmieściach",
   description:
-    "Kupujemy domy za gotówkę w Chicago i na przedmieściach. Bez prowizji, bez remontów, a zamknięciem transakcji zajmuje się kancelaria prawna. Oferta w 48 godzin. Mówimy po polsku.",
+    "Kupujemy domy bezpośrednio w Chicago i na przedmieściach. Bez prowizji, bez remontów, a całym zamknięciem transakcji zajmuje się nasz zespół. Natychmiastowa oferta w 48 godzin. Mówimy po polsku.",
   alternates: {
     canonical: "/pl",
     languages: { en: "/", es: "/es", pl: "/pl" },
@@ -25,12 +25,12 @@ const FAQS = [
     a: "Niczego nie musisz naprawiać ani sprzątać. Kupujemy dom dokładnie w takim stanie, w jakim jest. Zabierz to, co chcesz zatrzymać, a resztę zostaw nam.",
   },
   {
-    q: "Kto zajmuje się zamknięciem transakcji i dokumentami prawnymi?",
-    a: "Każdą transakcję przygotowuje i prowadzi REAL Law Group, P.C., kancelaria prawa nieruchomości w Elmhurst w stanie Illinois. Możesz również przyprowadzić własnego prawnika, jeśli wolisz.",
+    q: "Kto zajmuje się zamknięciem transakcji i dokumentami?",
+    a: "Każdą transakcję przygotowuje i prowadzi nasz własny zespół, od pierwszej rozmowy aż po dzień podpisania. Jeśli chcesz, zaufana przez Ciebie osoba może razem z Tobą przejrzeć dokumenty.",
   },
   {
     q: "Czy możecie pomóc, jeśli grozi mi egzekucja hipoteczna (foreclosure)?",
-    a: "Tak. W Illinois zazwyczaj można sprzedać dom aż do momentu zatwierdzenia licytacji przez sąd, a sprzedaż za gotówkę przed wyrokiem zwykle chroni znacznie więcej Twojego majątku niż dopuszczenie do licytacji.",
+    a: "Tak. W Illinois zazwyczaj można sprzedać dom aż do momentu zatwierdzenia licytacji przez sąd, a bezpośrednia sprzedaż przed wyrokiem zwykle chroni znacznie więcej Twojego majątku niż dopuszczenie do licytacji.",
   },
 ];
 
@@ -68,7 +68,7 @@ const T = {
     "Chcę tylko poznać cenę",
   ],
   notes: "Coś, o czym powinniśmy wiedzieć? (lokatorzy, zadłużenie, remonty…)",
-  submit: "Chcę ofertę gotówkową",
+  submit: "Chcę otrzymać ofertę",
   successTitle: "Otrzymaliśmy Twoje zgłoszenie i już działamy",
   successBody:
     "Oddzwonimy tego samego dnia roboczego. Jeśli wolisz porozmawiać od razu, zadzwoń pod numer",
@@ -105,17 +105,16 @@ export default function PolishPage() {
             </h1>
             <div className="mt-6 h-px w-24 bg-brass-400/60" />
             <p className="mt-6 max-w-md text-lg leading-relaxed text-cream-100/85">
-              Składamy uczciwe oferty gotówkowe za domy w Chicagoland, a
-              kancelaria prawa nieruchomości zajmuje się każdym szczegółem
-              zamknięcia transakcji bez żadnych kosztów dla Ciebie. Nigdy nie
-              zapłacisz prowizji, nie wykonasz żadnego remontu i sam wybierasz
-              datę zamknięcia.
+              Składamy uczciwe, natychmiastowe oferty za domy w Chicagoland, a
+              nasz zespół zajmuje się każdym szczegółem zamknięcia transakcji
+              bez żadnych kosztów dla Ciebie. Nigdy nie zapłacisz prowizji,
+              nie wykonasz żadnego remontu i sam wybierasz datę zamknięcia.
             </p>
             <ul className="mt-8 space-y-3 text-cream-100/85">
               {[
-                "Pisemna oferta gotówkowa w 48 godzin",
+                "Pisemna natychmiastowa oferta w 48 godzin",
                 "Kupujemy dom w obecnym stanie, bez remontów",
-                "Zamknięcie prowadzone przez prawników, w cenie",
+                "Zamknięcie w pełni prowadzone przez nas, w cenie",
                 "Mówimy po polsku na każdym etapie",
               ].map((x) => (
                 <li key={x} className="flex gap-3">

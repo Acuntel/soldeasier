@@ -99,8 +99,8 @@ export default function BlogPostPage({
                 Ready for a real number on your home?
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-ink-700">
-                A written cash offer arrives within forty-eight hours, and the
-                closing is managed by REAL Law Group, P.C. at no cost to you.
+                A written offer arrives within forty-eight hours, and we manage
+                the entire closing at no cost to you.
               </p>
               <QuickForm className="mt-5" />
               <a

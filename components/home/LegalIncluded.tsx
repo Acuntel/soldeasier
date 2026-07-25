@@ -15,16 +15,16 @@ export default function LegalIncluded() {
     <section className="py-20 sm:py-28">
       <div className="wrap grid items-center gap-12 lg:grid-cols-2">
         <Reveal className="order-2 lg:order-1">
-          <p className="eyebrow mb-4">The law firm is built in</p>
+          <p className="eyebrow mb-4">The hard parts are handled</p>
           <h2 className="font-display text-4xl font-semibold leading-tight text-ink-950 sm:text-5xl">
-            The complicated legal work comes{" "}
+            The complicated work comes{" "}
             <span className="italic text-brass-600">included</span>
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-ink-700">
-            Most cash buyers hand you a contract and wish you luck with the
-            paperwork. Every SoldEasier closing is prepared and managed by REAL
-            Law Group, P.C., an Elmhurst real estate law firm with deep
-            experience in distressed and complicated transactions.
+            Most buyers hand you a contract and wish you luck with the
+            paperwork. SoldEasier prepares and manages the entire closing for
+            you, and we have deep experience with the distressed and
+            complicated situations that make other buyers walk away.
           </p>
           <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
             {COVERED.map((t) => (
@@ -37,8 +37,8 @@ export default function LegalIncluded() {
             ))}
           </ul>
           <p className="mt-6 text-sm leading-relaxed text-ink-500">
-            Sellers are always welcome to bring their own attorney, and we will
-            coordinate with them directly.
+            If you would like anyone you trust to review the paperwork with
+            you, we are glad to coordinate with them directly.
           </p>
         </Reveal>
         <Reveal delay={0.1} className="order-1 lg:order-2">

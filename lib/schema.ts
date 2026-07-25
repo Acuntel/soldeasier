@@ -29,18 +29,13 @@ export function baseGraph() {
           name: `${c} County, IL`,
         })),
         knowsAbout: [
-          "cash home buying",
+          "direct home buying",
           "selling a house as-is",
           "probate and inherited property sales",
           "pre-foreclosure home sales",
           "short sales and deed in lieu",
           "real estate closings",
         ],
-        memberOf: {
-          "@type": "Organization",
-          name: "REAL Law Group, P.C.",
-          url: "https://reallawgroup.com",
-        },
       },
       {
         "@type": "WebSite",
@@ -51,9 +46,9 @@ export function baseGraph() {
       },
       {
         "@type": "Service",
-        name: "Cash home buying with attorney-managed closing",
+        name: "Direct home buying with immediate offers",
         provider: { "@id": orgId },
-        serviceType: "We buy houses for cash",
+        serviceType: "We buy houses directly from owners",
         areaServed: "Chicago metropolitan area, Illinois",
       },
     ],

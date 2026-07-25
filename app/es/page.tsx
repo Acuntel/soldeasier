@@ -6,9 +6,9 @@ import { SITE } from "@/lib/site";
 import { faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Vendemos Su Casa Rápido por Dinero en Efectivo en Chicago",
+  title: "Venda Su Casa Rápido con una Oferta Inmediata en Chicago",
   description:
-    "Compramos casas en efectivo en los suburbios de Chicago. Sin comisiones, sin reparaciones y con un bufete de abogados de bienes raíces manejando su cierre. Oferta en 48 horas.",
+    "Compramos casas directamente en los suburbios de Chicago. Sin comisiones, sin reparaciones y con el cierre completamente manejado por nuestro equipo. Oferta inmediata en 48 horas.",
   alternates: {
     canonical: "/es",
     languages: { en: "/", es: "/es", pl: "/pl" },
@@ -25,12 +25,12 @@ const FAQS = [
     a: "No necesita reparar ni limpiar nada. Compramos la casa exactamente como está, y usted se lleva lo que quiera y deja el resto.",
   },
   {
-    q: "¿Quién maneja el cierre y los documentos legales?",
-    a: "Cada cierre es preparado y administrado por REAL Law Group, P.C., un bufete de abogados de bienes raíces en Elmhurst, Illinois. Usted también puede traer a su propio abogado si lo prefiere.",
+    q: "¿Quién maneja el cierre y los documentos?",
+    a: "Nuestro propio equipo prepara y administra cada cierre desde la primera llamada hasta el día de la firma. Si lo prefiere, una persona de su confianza puede revisar los documentos con usted.",
   },
   {
     q: "¿Pueden ayudar si estoy en proceso de ejecución hipotecaria?",
-    a: "Sí. En Illinois generalmente puede vender su casa hasta que el tribunal confirme la venta del alguacil, y vender por efectivo antes del juicio normalmente protege mucho más de su patrimonio que dejar que la casa se vaya a subasta.",
+    a: "Sí. En Illinois generalmente puede vender su casa hasta que el tribunal confirme la venta del alguacil, y vender directamente antes del juicio normalmente protege mucho más de su patrimonio que dejar que la casa se vaya a subasta.",
   },
 ];
 
@@ -68,7 +68,7 @@ const T = {
     "Solo quiero saber el precio",
   ],
   notes: "¿Algo que debamos saber? (inquilinos, deudas, reparaciones…)",
-  submit: "Quiero mi oferta en efectivo",
+  submit: "Quiero mi oferta",
   successTitle: "Recibimos su información y estamos en ello",
   successBody:
     "Le llamaremos el mismo día hábil. Si prefiere hablar ahora, llámenos al",
@@ -105,16 +105,16 @@ export default function SpanishPage() {
             </h1>
             <div className="mt-6 h-px w-24 bg-brass-400/60" />
             <p className="mt-6 max-w-md text-lg leading-relaxed text-cream-100/85">
-              Hacemos ofertas justas en efectivo por casas en Chicagoland, y un
-              bufete de abogados de bienes raíces maneja cada detalle de su
-              cierre sin costo para usted. Nunca pagará comisiones, nunca hará
-              reparaciones, y usted elige la fecha de cierre.
+              Hacemos ofertas justas e inmediatas por casas en Chicagoland, y
+              nuestro equipo maneja cada detalle de su cierre sin costo para
+              usted. Nunca pagará comisiones, nunca hará reparaciones, y
+              usted elige la fecha de cierre.
             </p>
             <ul className="mt-8 space-y-3 text-cream-100/85">
               {[
-                "Oferta en efectivo por escrito en 48 horas",
+                "Oferta inmediata por escrito en 48 horas",
                 "Compramos la casa tal como está, sin reparaciones",
-                "Cierre manejado por abogados, incluido sin costo",
+                "Cierre completamente manejado, incluido sin costo",
                 "Hablamos español durante todo el proceso",
               ].map((x) => (
                 <li key={x} className="flex gap-3">

@@ -5,7 +5,7 @@ export const SITE = {
   url: "https://soldeasier.com",
   tagline: "The easier way to sell your home.",
   description:
-    "SoldEasier buys houses for cash across Chicagoland with attorney-backed closings through REAL Law Group, P.C. and no fees, repairs, or listings. Sell your house as-is on the date you choose.",
+    "SoldEasier makes immediate offers on houses across Chicagoland with no fees, no repairs, and no listings. Sell your house as-is on the date you choose.",
   phone: "(630) 299-7600",
   phoneHref: "tel:+16302997600",
   email: "vincent@reallawgroup.com",

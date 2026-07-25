@@ -4,9 +4,9 @@ import Reveal from "@/components/Reveal";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Who We Are, the Attorney and the Builder Behind SoldEasier",
+  title: "Who We Are, the Two People Behind SoldEasier",
   description:
-    "SoldEasier is Vincent Incopero, the Elmhurst real estate attorney behind REAL Law Group, P.C., and Brady Schwartz. Local buyers, attorney-managed closings, straight answers.",
+    "SoldEasier is Vincent Incopero and Brady Schwartz, two local Elmhurst buyers who make immediate offers, manage every closing themselves, and give straight answers.",
   alternates: { canonical: "/about" },
 };
 
@@ -35,8 +35,8 @@ export default function AboutPage() {
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-cream-100/80">
             SoldEasier exists because selling a house during a hard season
             should never require a call center, a wholesaler, and a leap of
-            faith. We are a deliberately small, attorney-backed team based in
-            Elmhurst, and we answer our own phone.
+            faith. We are a deliberately small local team based in Elmhurst,
+            and we answer our own phone.
           </p>
         </div>
       </section>
@@ -46,39 +46,34 @@ export default function AboutPage() {
           <Reveal>
             <div className="grid gap-8 lg:grid-cols-3">
               <div>
-                <p className="eyebrow mb-2">The attorney</p>
+                <p className="eyebrow mb-2">The closer</p>
                 <h2 className="font-display text-3xl font-semibold text-ink-950">
                   Vincent Incopero
                 </h2>
                 <p className="mt-1 text-sm font-medium text-brass-600">
-                  Co-Founder · Managing Partner, REAL Law Group, P.C.
+                  Co-Founder · Closings & Strategy
                 </p>
               </div>
               <div className="space-y-4 leading-relaxed text-ink-700 lg:col-span-2">
                 <p>
-                  Vince has spent his entire career on the legal side of the
-                  closing table. Before founding REAL Law Group, P.C. in
-                  Elmhurst, he worked at Chicago&apos;s most recognized title
-                  company and practiced at the city&apos;s largest
-                  plaintiff&apos;s firm. His practice concentrates on real
-                  estate sales and purchases, business organizations, and
-                  estate planning, and his team carries unusual depth in
-                  distressed transactions that include short sales,
-                  deed-in-lieu agreements, bank-owned sales, and probate
-                  property.
+                  Vince has spent his entire career at the closing table. He
+                  started at Chicago&apos;s most recognized title company, and
+                  in the years since he has guided hundreds of sales and
+                  purchases across the western suburbs. His work carries
+                  unusual depth in complicated transactions, including short
+                  sales, deed-in-lieu agreements, bank-owned sales, and
+                  probate property.
                 </p>
                 <p>
-                  Vince studied finance and economics before law school, so he
-                  reads a deal the way an underwriter does. That background is
-                  why every SoldEasier offer arrives with the math shown, and
-                  why every closing is run by a team that has seen every
-                  complication a house can hide.
+                  Vince studied finance and economics, so he reads a deal the
+                  way an underwriter does. That background is why every
+                  SoldEasier offer arrives with the math shown, and why every
+                  closing is run by people who have seen every complication a
+                  house can hide.
                 </p>
                 <p className="text-sm text-ink-500">
-                  J.D., The John Marshall Law School · B.S. Finance &
-                  Economics, Elmhurst College · Illinois bar; U.S. District
-                  Court, N.D. Illinois · Illinois Real Estate Lawyers
-                  Association
+                  B.S. Finance & Economics, Elmhurst College · Based in
+                  Elmhurst, Illinois
                 </p>
               </div>
             </div>
@@ -124,7 +119,7 @@ export default function AboutPage() {
                 suburbs, and our reputation rides on every single closing. That
                 is why there are no re-trades, no assignment games, and no
                 pressure tactics. You get a fair number, a firm handshake, and
-                a law firm making sure everything lands cleanly.
+                a careful team making sure everything lands cleanly.
               </p>
               <p className="mt-8 text-sm text-cream-100/70">
                 Tell us where the house is and we will take it from here.

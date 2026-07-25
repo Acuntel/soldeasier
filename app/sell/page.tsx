@@ -6,9 +6,9 @@ import { SITE } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Sell Your Home for Cash and Get an Offer in 48 Hours",
+  title: "Sell Your Home Direct and Get an Offer in 48 Hours",
   description:
-    "Tell us about your Chicagoland house and receive a fair, no-obligation cash offer within 48 hours. Sold as-is with no fees and an attorney-managed closing on your date.",
+    "Tell us about your Chicagoland house and receive a fair, no-obligation immediate offer within 48 hours. Sold as-is with no fees and a fully managed closing on your date.",
   alternates: { canonical: "/sell" },
 };
 
@@ -23,7 +23,7 @@ const EXPECT = [
   },
   {
     t: "A transparent offer in writing",
-    b: "Your cash offer arrives in writing with the math shown, no financing contingencies, and no hidden fees, and you can take all the time you need to decide.",
+    b: "Your offer arrives in writing with the math shown, no financing contingencies, and no hidden fees, and you can take all the time you need to decide.",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function SellPage() {
           <div>
             <p className="eyebrow mb-4 !text-brass-300">Sell your home</p>
             <h1 className="font-display text-4xl font-semibold leading-tight sm:text-5xl">
-              A written cash offer within{" "}
+              A written offer within{" "}
               <span className="italic text-brass-300">forty-eight hours</span>
             </h1>
             <div className="mt-6 h-px w-24 bg-brass-400/60" />

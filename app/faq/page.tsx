@@ -4,9 +4,9 @@ import { FAQS } from "@/lib/faqs";
 import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "FAQ on Selling Your House for Cash in Chicagoland",
+  title: "FAQ on Selling Your House Directly in Chicagoland",
   description:
-    "Every question sellers ask us: fees, how the cash offer is calculated, as-is sales, foreclosure and probate timelines, closing speed, and who you'll actually talk to.",
+    "Every question sellers ask us: fees, how the offer is calculated, as-is sales, foreclosure and probate timelines, closing speed, and who you'll actually talk to.",
   alternates: { canonical: "/faq" },
 };
 

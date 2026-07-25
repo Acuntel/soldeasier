@@ -1,8 +1,8 @@
-import { Banknote, CalendarCheck, Home, Scale } from "lucide-react";
+import { Banknote, CalendarCheck, FileCheck, Home } from "lucide-react";
 
 const ITEMS = [
-  { icon: Scale, label: "Attorney-managed closings" },
-  { icon: Banknote, label: "Cash with no financing fall-throughs" },
+  { icon: FileCheck, label: "Every closing fully managed" },
+  { icon: Banknote, label: "No financing fall-throughs" },
   { icon: Home, label: "Any condition, sold as-is" },
   { icon: CalendarCheck, label: "You pick the closing date" },
 ];

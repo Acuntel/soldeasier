@@ -64,7 +64,7 @@ export default function SituationPage({
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Link href="/sell" className="btn-gold">
-                Get my cash offer
+                Get my offer
               </Link>
               <a href={SITE.phoneHref} className="btn-ghost text-cream-50">
                 <Phone className="h-4 w-4" /> {SITE.phone}
@@ -106,8 +106,8 @@ export default function SituationPage({
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-ink-700">
                 There is no call center at SoldEasier. Brady and Vince
-                personally handle every Chicagoland home we buy, and REAL Law
-                Group, P.C. manages each closing.
+                personally handle every Chicagoland home we buy, from the
+                first call through the closing itself.
               </p>
               <QuickForm className="mt-5" />
               <a

@@ -18,16 +18,16 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
     default:
-      "Sell Your House Fast for Cash in Chicagoland | Attorney-Backed | SoldEasier",
+      "Sell Your House Fast in Chicagoland | Immediate Offers | SoldEasier",
     template: "%s | SoldEasier",
   },
   description: SITE.description,
   keywords: [
     "sell my house fast Chicago",
     "we buy houses Elmhurst IL",
-    "cash home buyers DuPage County",
+    "direct home buyers DuPage County",
     "sell house as-is Chicago suburbs",
-    "attorney backed home sale Illinois",
+    "immediate offer on my house Illinois",
     "sell inherited house Illinois",
     "stop foreclosure sell house Illinois",
   ],
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: SITE.name,
     url: SITE.url,
-    title: "Sell Your House Fast for Cash in Chicagoland | SoldEasier",
+    title: "Sell Your House Fast in Chicagoland | SoldEasier",
     description: SITE.description,
     images: [{ url: "/og.png", width: 1200, height: 630 }],
   },

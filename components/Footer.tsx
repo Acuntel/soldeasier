@@ -27,9 +27,9 @@ export default function Footer() {
             Sold<span className="text-brass-400">Easier</span>
           </p>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-cream-100/70">
-            We are local, attorney-backed cash home buyers, and every closing
-            is prepared and managed by REAL Law Group, P.C. so the hard part is
-            always handled for you.
+            We are local home buyers who make immediate offers, and we prepare
+            and manage every closing ourselves so the hard part is always
+            handled for you.
           </p>
           <p className="mt-4 text-sm text-cream-100/70">
             {SITE.address.street}
@@ -120,9 +120,8 @@ export default function Footer() {
             © {new Date().getFullYear()} {SITE.name}. All rights reserved.
           </p>
           <p>
-            Every closing is handled by REAL Law Group, P.C. in Elmhurst,
-            Illinois, and sellers are always welcome to retain their own
-            counsel.
+            SoldEasier is based in Elmhurst, Illinois, and buys homes across
+            the Chicagoland suburbs directly from their owners.
           </p>
         </div>
       </div>

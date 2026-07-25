@@ -22,7 +22,7 @@ const ROWS: [string, string, string, string][] = [
   ],
   [
     "Certainty of closing",
-    "Cash, so it cannot fall through",
+    "No financing, so it cannot fall through",
     "Depends on the buyer's loan",
     "Offers renegotiated late",
   ],
@@ -33,9 +33,9 @@ const ROWS: [string, string, string, string][] = [
     "A call center queue",
   ],
   [
-    "Legal work",
-    "Law firm included at no cost",
-    "You hire your own attorney",
+    "Closing paperwork",
+    "Fully handled at no cost",
+    "You arrange it yourself",
     "You are on your own",
   ],
 ];
@@ -64,7 +64,7 @@ export default function Compare() {
                     Listing with an agent
                   </th>
                   <th className="px-5 py-4 font-medium text-cream-100/80">
-                    National cash chains
+                    National chains
                   </th>
                 </tr>
               </thead>

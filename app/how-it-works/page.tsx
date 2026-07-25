@@ -4,9 +4,9 @@ import Reveal from "@/components/Reveal";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "How It Works, From Cash Offer to Attorney-Managed Closing",
+  title: "How It Works, From Immediate Offer to a Managed Closing",
   description:
-    "How selling your Chicagoland house to SoldEasier works: one conversation, a transparent cash offer within 48 hours, and an attorney-managed closing on the date you choose.",
+    "How selling your Chicagoland house to SoldEasier works: one conversation, a transparent written offer within 48 hours, and a fully managed closing on the date you choose.",
   alternates: { canonical: "/how-it-works" },
 };
 
@@ -22,14 +22,14 @@ const STAGES = [
     title: "The walkthrough and your written offer",
     paras: [
       "We visit the property once, usually within forty-eight hours, and you should not clean, fix, or stage anything before we arrive. We have seen every condition imaginable and we price the work honestly.",
-      "You then receive a written cash offer with the math behind it, meaning what the home would be worth fully updated, what the work truly costs, and our margin. Compare it against a listing or against any other offer, because there is zero obligation and we never pressure a signature.",
+      "You then receive a written offer with the math behind it, meaning what the home would be worth fully updated, what the work truly costs, and our margin. Compare it against a listing or against any other offer, because there is zero obligation and we never pressure a signature.",
     ],
   },
   {
     title: "Closing day on your schedule",
     paras: [
-      "Once you accept, REAL Law Group, P.C. prepares the entire closing, including title, payoffs, liens, municipal requirements, and any probate or foreclosure complications along the way. You will always know exactly what happens next.",
-      "You can close in as little as two weeks or pick a date months away if you need the time. Because we pay cash, the sale never falls through at the last minute, and you walk away with your proceeds on the day you chose.",
+      "Once you accept, we prepare the entire closing, including title, payoffs, liens, municipal requirements, and any probate or foreclosure complications along the way. You will always know exactly what happens next.",
+      "You can close in as little as two weeks or pick a date months away if you need the time. Because we buy without financing, the sale never falls through at the last minute, and you walk away with your proceeds on the day you chose.",
     ],
   },
 ];
@@ -52,7 +52,7 @@ export default function HowItWorksPage() {
         <div className="wrap">
           <p className="eyebrow mb-4 !text-brass-300">How it works</p>
           <h1 className="max-w-3xl font-display text-4xl font-semibold leading-[1.15] sm:text-5xl">
-            From the first call to cash in{" "}
+            From the first call to closed in{" "}
             <span className="italic text-brass-300">hand</span>
           </h1>
           <div className="mt-7 h-px w-24 bg-brass-400/60" />
