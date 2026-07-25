@@ -1,9 +1,10 @@
 import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
-// Lead notifications for Brady + Vince. Primary transport is FormSubmit's
-// activated alias (delivers to bradyschwartz25@gmail.com, cc to the firm).
-// Set RESEND_API_KEY (+ optional RESEND_FROM) in Vercel env to upgrade to
-// Resend without a code change.
+// Lead notifications for Brady + Vince. Transport order:
+//   1. Resend        — if RESEND_API_KEY is set (future upgrade, best deliverability)
+//   2. Gmail SMTP    — GMAIL_USER + GMAIL_APP_PASSWORD (current primary)
+//   3. FormSubmit    — last resort (403s from Vercel egress IPs; works locally)
 const FORMSUBMIT_ENDPOINT =
   "https://formsubmit.co/ajax/02e88bc6db3dda1ad60ea8b7bc98ee9e";
 const CC_EMAIL = "info@reallawgroup.com";
@@ -52,6 +53,8 @@ export async function POST(req: Request) {
     .join("\n");
 
   const resendKey = process.env.RESEND_API_KEY;
+  const gmailUser = process.env.GMAIL_USER;
+  const gmailPass = process.env.GMAIL_APP_PASSWORD;
   try {
     if (resendKey) {
       const res = await fetch("https://api.resend.com/emails", {
@@ -69,6 +72,20 @@ export async function POST(req: Request) {
         }),
       });
       if (!res.ok) throw new Error(`resend ${res.status}`);
+    } else if (gmailUser && gmailPass) {
+      const transporter = nodemailer.createTransport({
+        host: "smtp.gmail.com",
+        port: 465,
+        secure: true,
+        auth: { user: gmailUser, pass: gmailPass },
+      });
+      await transporter.sendMail({
+        from: `"SoldEasier Leads" <${gmailUser}>`,
+        to: [TO_EMAIL, CC_EMAIL],
+        replyTo: lead.email || undefined,
+        subject,
+        text: `${lines}\n\nSubmitted via soldeasier.com`,
+      });
     } else {
       const res = await fetch(FORMSUBMIT_ENDPOINT, {
         method: "POST",
