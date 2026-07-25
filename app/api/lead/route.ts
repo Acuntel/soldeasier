@@ -148,7 +148,7 @@ export async function POST(req: Request) {
     : `Source: the soldeasier.com WEBSITE FORM. This seller reached out to us directly and is expecting contact today.${langNote}`;
   const lines = [
     intro,
-    "What to do: call them if you have time when you read this, or send Brady the phone number and he will make the call.",
+    "What to do: call them if you have time when you read this, or text Brady the phone number at (847) 212-2142 and he will make the call.",
     "",
     ...Object.entries(lead)
       .filter(([, v]) => v)

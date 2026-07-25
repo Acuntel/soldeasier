@@ -6,8 +6,8 @@ export const SITE = {
   tagline: "The easier way to sell your home.",
   description:
     "SoldEasier makes immediate offers on houses across Chicagoland with no fees, no repairs, and no listings. Sell your house as-is on the date you choose.",
-  phone: "(630) 299-7600",
-  phoneHref: "tel:+16302997600",
+  phone: "(847) 212-2142",
+  phoneHref: "tel:+18472122142",
   email: "vincent@reallawgroup.com",
   address: {
     street: "381 N York St Suite 1",
