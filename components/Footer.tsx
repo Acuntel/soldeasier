@@ -2,6 +2,7 @@ import Link from "next/link";
 import QuickForm from "@/components/QuickForm";
 import { NAV_LINKS, SITE } from "@/lib/site";
 import { SITUATIONS } from "@/lib/situations";
+import { TOWNS } from "@/lib/towns";
 
 export default function Footer() {
   return (
@@ -93,9 +94,22 @@ export default function Footer() {
             ))}
           </ul>
           <p className="eyebrow mb-4">Where We Buy</p>
-          <p className="text-sm leading-relaxed text-cream-100/70">
-            {SITE.serviceTowns.join(" · ")}, and throughout{" "}
-            {SITE.serviceCounties.join(", ")} counties.
+          <ul className="space-y-2.5 text-sm">
+            {TOWNS.map((t) => (
+              <li key={t.slug}>
+                <Link
+                  href={`/sell-my-house-fast/${t.slug}`}
+                  className="transition hover:text-brass-300"
+                >
+                  Sell in {t.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-4 text-sm leading-relaxed text-cream-100/70">
+            We also buy throughout {SITE.serviceCounties.join(", ")} counties,
+            including {SITE.serviceTowns.slice(4, 12).join(", ")}, and every
+            surrounding suburb.
           </p>
         </div>
       </div>

@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/site";
 import { SITUATIONS } from "@/lib/situations";
 import { POSTS } from "@/lib/blog";
+import { TOWNS } from "@/lib/towns";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -24,6 +25,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...SITUATIONS.map((s) => ({
       url: `${SITE.url}/${s.slug}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    })),
+    ...TOWNS.map((t) => ({
+      url: `${SITE.url}/sell-my-house-fast/${t.slug}`,
       lastModified: now,
       changeFrequency: "weekly" as const,
       priority: 0.8,

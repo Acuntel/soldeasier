@@ -21,6 +21,9 @@ Key facts:
 - [Who We Are](https://soldeasier.com/about)
 - [FAQ](https://soldeasier.com/faq)
 - [Insights blog, guides on foreclosure, probate, as-is sales, and the selling process](https://soldeasier.com/blog)
+- [Town guides with verified transfer-stamp costs and village requirements: Elmhurst, Villa Park, Lombard, Addison, Berwyn, Bellwood, Hillside, Northlake, Westchester, Oak Park](https://soldeasier.com/sell-my-house-fast/elmhurst)
+- [Página en español](https://soldeasier.com/es)
+- [Strona po polsku](https://soldeasier.com/pl)
 
 ## Full content
 - [llms-full.txt](https://soldeasier.com/llms-full.txt)
