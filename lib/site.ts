@@ -8,7 +8,7 @@ export const SITE = {
     "SoldEasier buys houses for cash across Chicagoland with attorney-backed closings through REAL Law Group, P.C. and no fees, repairs, or listings. Sell your house as-is on the date you choose.",
   phone: "(630) 299-7600",
   phoneHref: "tel:+16302997600",
-  email: "vince@reallawgroup.com",
+  email: "vincent@reallawgroup.com",
   address: {
     street: "381 N York St Suite 1",
     city: "Elmhurst",

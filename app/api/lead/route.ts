@@ -7,7 +7,7 @@ import nodemailer from "nodemailer";
 //   3. FormSubmit    — last resort (403s from Vercel egress IPs; works locally)
 const FORMSUBMIT_ENDPOINT =
   "https://formsubmit.co/ajax/02e88bc6db3dda1ad60ea8b7bc98ee9e";
-const CC_EMAIL = "vince@reallawgroup.com";
+const CC_EMAIL = "vincent@reallawgroup.com";
 const TO_EMAIL = "bradyschwartz25@gmail.com";
 
 type Lead = Record<string, string>;
