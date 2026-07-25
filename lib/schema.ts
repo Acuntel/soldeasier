@@ -13,7 +13,6 @@ export function baseGraph() {
         name: SITE.name,
         url: SITE.url,
         telephone: SITE.phone,
-        email: SITE.email,
         slogan: SITE.tagline,
         description: SITE.description,
         address: {

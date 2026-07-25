@@ -34,11 +34,11 @@ export default function PrivacyPage() {
           improve it. We don&apos;t run third-party advertising trackers.
         </p>
         <p>
-          To have your information removed, email{" "}
-          <a href={`mailto:${SITE.email}`} className="text-brass-600">
-            {SITE.email}
+          To have your information removed, call{" "}
+          <a href={SITE.phoneHref} className="text-brass-600">
+            {SITE.phone}
           </a>{" "}
-          or call {SITE.phone} and we&apos;ll delete it promptly.
+          and we&apos;ll delete it promptly.
         </p>
       </div>
     </section>
