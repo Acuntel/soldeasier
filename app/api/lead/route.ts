@@ -35,22 +35,36 @@ export async function POST(req: Request) {
     city: clean(body.city),
     zip: clean(body.zip, 12),
     situation: clean(body.situation),
+    condition: clean(body.condition),
     timeline: clean(body.timeline),
     notes: clean(body.notes, 2000),
   };
 
-  if (!lead.name || !lead.phone || !lead.address) {
+  const required = [
+    "name",
+    "phone",
+    "address",
+    "city",
+    "situation",
+    "condition",
+    "timeline",
+  ] as const;
+  if (required.some((k) => !lead[k])) {
     return NextResponse.json(
-      { error: "name, phone and address are required" },
+      { error: "missing required fields" },
       { status: 422 },
     );
   }
 
-  const subject = `🏠 New SoldEasier lead: ${lead.address}, ${lead.city}`;
-  const lines = Object.entries(lead)
-    .filter(([, v]) => v)
-    .map(([k, v]) => `${k[0].toUpperCase()}${k.slice(1)}: ${v}`)
-    .join("\n");
+  const subject = `🏠 Website lead: ${lead.address}, ${lead.city}`;
+  const lines = [
+    "Source: the soldeasier.com WEBSITE FORM. This seller reached out to us directly and is expecting contact today.",
+    "What to do: call them if you have time when you read this, or send Brady the phone number and he will make the call.",
+    "",
+    ...Object.entries(lead)
+      .filter(([, v]) => v)
+      .map(([k, v]) => `${k[0].toUpperCase()}${k.slice(1)}: ${v}`),
+  ].join("\n");
 
   const resendKey = process.env.RESEND_API_KEY;
   const gmailUser = process.env.GMAIL_USER;

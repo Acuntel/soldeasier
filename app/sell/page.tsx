@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Phone } from "lucide-react";
 import LeadForm from "@/components/LeadForm";
 import { SITE } from "@/lib/site";
@@ -72,7 +73,13 @@ export default function SellPage() {
             </div>
           </div>
           <div className="text-ink-900">
-            <LeadForm />
+            <Suspense
+              fallback={
+                <div className="h-96 rounded-2xl border border-cream-200 bg-white" />
+              }
+            >
+              <LeadForm />
+            </Suspense>
           </div>
         </div>
       </section>

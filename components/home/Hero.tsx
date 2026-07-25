@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-ink-950 text-cream-50">
       <Image
         src="/img/hero.jpg"
-        alt="A beautiful Chicagoland home at dusk"
+        alt="An older Chicagoland bungalow with a worn roof in the fall"
         fill
         priority
         className="object-cover opacity-45"

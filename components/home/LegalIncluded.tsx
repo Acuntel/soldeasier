@@ -45,7 +45,7 @@ export default function LegalIncluded() {
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
             <Image
               src="/img/kitchen.jpg"
-              alt="A renovated kitchen in a Chicagoland home"
+              alt="An ordinary kitchen in an everyday Chicagoland home"
               fill
               className="object-cover"
               sizes="(min-width:1024px) 36rem, 100vw"

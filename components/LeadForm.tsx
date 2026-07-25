@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { ArrowRight, CheckCircle2, LoaderCircle } from "lucide-react";
 import { SITE } from "@/lib/site";
 
@@ -16,8 +17,18 @@ const SITUATIONS = [
   "Relocating or downsizing",
 ];
 
+const CONDITIONS = [
+  "Move-in ready",
+  "Livable but dated",
+  "Needs some work",
+  "Needs major work",
+  "Not livable right now",
+];
+
 export default function LeadForm() {
   const [status, setStatus] = useState<Status>("idle");
+  const params = useSearchParams();
+  const prefilled = !!(params.get("name") || params.get("address"));
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -59,16 +70,30 @@ export default function LeadForm() {
 
   return (
     <form
+      id="offer"
       onSubmit={onSubmit}
       className="rounded-2xl border border-cream-200 bg-white p-6 shadow-xl shadow-ink-950/5 sm:p-8"
     >
+      {prefilled && (
+        <p className="mb-5 rounded-lg bg-cream-100 px-4 py-3 text-sm text-ink-700">
+          We carried over your first three answers, and a few more details are
+          all we need to prepare your offer.
+        </p>
+      )}
       <div className="grid gap-4 sm:grid-cols-2">
-        <input name="name" required placeholder="Your name" className="field" />
+        <input
+          name="name"
+          required
+          placeholder="Your name"
+          defaultValue={params.get("name") ?? ""}
+          className="field"
+        />
         <input
           name="phone"
           required
           type="tel"
           placeholder="Phone"
+          defaultValue={params.get("phone") ?? ""}
           className="field"
         />
         <input
@@ -81,11 +106,17 @@ export default function LeadForm() {
           name="address"
           required
           placeholder="Property address"
+          defaultValue={params.get("address") ?? ""}
           className="field sm:col-span-2"
         />
         <input name="city" required placeholder="City" className="field" />
         <input name="zip" placeholder="ZIP" className="field" />
-        <select name="situation" className="field sm:col-span-2" defaultValue="">
+        <select
+          name="situation"
+          required
+          className="field sm:col-span-2"
+          defaultValue=""
+        >
           <option value="" disabled>
             What best describes your situation?
           </option>
@@ -93,7 +124,25 @@ export default function LeadForm() {
             <option key={s}>{s}</option>
           ))}
         </select>
-        <select name="timeline" className="field sm:col-span-2" defaultValue="">
+        <select
+          name="condition"
+          required
+          className="field sm:col-span-2"
+          defaultValue=""
+        >
+          <option value="" disabled>
+            What condition is the home in?
+          </option>
+          {CONDITIONS.map((c) => (
+            <option key={c}>{c}</option>
+          ))}
+        </select>
+        <select
+          name="timeline"
+          required
+          className="field sm:col-span-2"
+          defaultValue=""
+        >
           <option value="" disabled>
             How soon do you want to sell?
           </option>
@@ -105,7 +154,7 @@ export default function LeadForm() {
         <textarea
           name="notes"
           rows={3}
-          placeholder="Anything we should know? (condition, tenants, liens…)"
+          placeholder="Anything we should know? (tenants, liens, repairs…)"
           className="field sm:col-span-2"
         />
         {/* honeypot */}
@@ -127,7 +176,7 @@ export default function LeadForm() {
           <LoaderCircle className="h-4 w-4 animate-spin" />
         ) : (
           <>
-            Get my cash offer <ArrowRight className="h-4 w-4" />
+            Send me my cash offer <ArrowRight className="h-4 w-4" />
           </>
         )}
       </button>

@@ -16,7 +16,7 @@ export default function Difference() {
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
             <Image
               src="/img/home2.jpg"
-              alt="A well-kept suburban Chicago home"
+              alt="A modest suburban Chicagoland bungalow on an ordinary street"
               fill
               className="object-cover"
               sizes="(min-width:1024px) 36rem, 100vw"
