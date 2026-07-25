@@ -101,12 +101,12 @@ export default function SituationPage({
           <aside className="lg:sticky lg:top-24 lg:self-start">
             <div className="rounded-2xl border border-cream-200 bg-cream-100 p-7">
               <h3 className="font-display text-xl font-semibold text-ink-950">
-                Talk to the actual buyers.
+                You talk directly with the actual buyers
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-ink-700">
-                No call center. Brady and Vince personally handle every
-                Chicagoland home we buy — with REAL Law Group, P.C. managing
-                the closing.
+                There is no call center at SoldEasier. Brady and Vince
+                personally handle every Chicagoland home we buy, and REAL Law
+                Group, P.C. manages each closing.
               </p>
               <Link href="/sell" className="btn-gold mt-5 w-full">
                 Get my cash offer

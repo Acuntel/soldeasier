@@ -19,11 +19,13 @@ export default function CtaBanner() {
       <div className="wrap relative text-center">
         <Reveal>
           <h2 className="mx-auto max-w-2xl font-display text-4xl font-semibold leading-tight sm:text-5xl">
-            Get a real cash offer this week.
+            Hold a real cash offer this{" "}
+            <span className="italic text-brass-300">week</span>
           </h2>
-          <p className="mx-auto mt-5 max-w-xl text-lg text-cream-100/80">
-            Tell us about your home today — we&apos;ll call you back the same
-            day, visit within 48 hours, and put a real number in your hands.
+          <p className="mx-auto mt-5 max-w-2xl text-lg text-cream-100/80">
+            Tell us about your home today and we will call you back the same
+            business day, walk the property within forty-eight hours, and put a
+            real number in your hands.
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link href="/sell" className="btn-gold">

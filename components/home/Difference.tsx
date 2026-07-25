@@ -1,6 +1,13 @@
 import Image from "next/image";
 import Reveal from "@/components/Reveal";
 
+const POINTS = [
+  "You keep one point of contact from the first call through closing day, and it is always one of us.",
+  "The offer we put in writing is the exact amount you receive, with no last-minute renegotiation.",
+  "A licensed Illinois real estate law firm prepares and manages your entire closing from start to finish.",
+  "Liens, probate, title tangles, and foreclosure deadlines are all handled by people who resolve them every week.",
+];
+
 export default function Difference() {
   return (
     <section className="py-20 sm:py-28">
@@ -19,23 +26,17 @@ export default function Difference() {
         <Reveal delay={0.1}>
           <p className="eyebrow mb-4">Why SoldEasier</p>
           <h2 className="font-display text-4xl font-semibold leading-tight text-ink-950 sm:text-5xl">
-            Bigger isn&apos;t better.
-            <br />
-            Closer is.
+            The biggest buyers are rarely the{" "}
+            <span className="italic text-brass-600">best</span> buyers
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-ink-700">
-            The national &ldquo;we buy houses&rdquo; brands run on call centers,
-            assignment games, and offers that shrink before closing. We&apos;re
-            deliberately smaller — when you call, you talk to the people
-            actually writing the check.
+            The national house-buying brands run on call centers, wholesale
+            assignment games, and offers that quietly shrink before closing
+            day. We stay deliberately small, so when you call you are talking
+            with the two people who actually write the check.
           </p>
           <ul className="mt-8 space-y-4 text-ink-800">
-            {[
-              "One point of contact from first call to closing — a relationship, not a ticket number.",
-              "The number we offer is the number you get. No last-minute re-trades.",
-              "A licensed Illinois real-estate law firm prepares and manages the entire closing.",
-              "Liens, probate, title tangles, foreclosure timelines — the complex work is handled in-house.",
-            ].map((t) => (
+            {POINTS.map((t) => (
               <li key={t} className="flex gap-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brass-500" />
                 <span className="leading-relaxed">{t}</span>

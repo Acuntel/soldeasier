@@ -5,24 +5,24 @@ import { SITE } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Sell Your Home for Cash — Get an Offer in 24–48 Hours",
+  title: "Sell Your Home for Cash and Get an Offer in 48 Hours",
   description:
-    "Tell us about your Chicagoland house and get a fair, no-obligation cash offer within 24–48 hours. As-is, no fees, attorney-managed closing on your date.",
+    "Tell us about your Chicagoland house and receive a fair, no-obligation cash offer within 48 hours. Sold as-is with no fees and an attorney-managed closing on your date.",
   alternates: { canonical: "/sell" },
 };
 
 const EXPECT = [
   {
-    t: "Same-day callback",
-    b: "A real person — Brady or Vince — calls you back the same business day. No call center, no script.",
+    t: "A same-day callback from a real person",
+    b: "Brady or Vince personally returns every inquiry the same business day, without a script and without a sales pitch.",
   },
   {
-    t: "Walkthrough in 24–48 hours",
-    b: "One quick visit. We never ask you to clean, repair, or stage anything.",
+    t: "One easy walkthrough of the property",
+    b: "We visit once, usually within forty-eight hours, and we never ask you to clean, repair, or stage anything.",
   },
   {
-    t: "A real offer, in writing",
-    b: "A transparent cash number with no financing contingencies and no hidden fees. Take all the time you need.",
+    t: "A transparent offer in writing",
+    b: "Your cash offer arrives in writing with the math shown, no financing contingencies, and no hidden fees, and you can take all the time you need to decide.",
   },
 ];
 
@@ -45,12 +45,14 @@ export default function SellPage() {
           <div>
             <p className="eyebrow mb-4 !text-brass-300">Sell your home</p>
             <h1 className="font-display text-4xl font-semibold leading-tight sm:text-5xl">
-              Two minutes now.
-              <br />A cash offer within 48 hours.
+              A written cash offer within{" "}
+              <span className="italic text-brass-300">forty-eight hours</span>
             </h1>
-            <p className="mt-5 max-w-md text-lg leading-relaxed text-cream-100/80">
-              Every submission goes directly to the two of us — not a lead
-              queue. Prefer to talk?{" "}
+            <div className="mt-6 h-px w-24 bg-brass-400/60" />
+            <p className="mt-6 max-w-md text-lg leading-relaxed text-cream-100/80">
+              Every submission comes directly to the two of us rather than into
+              a lead queue, and we treat it that way. If you would rather talk
+              it through first, call{" "}
               <a
                 href={SITE.phoneHref}
                 className="inline-flex items-center gap-1.5 font-semibold text-brass-300"
@@ -58,18 +60,13 @@ export default function SellPage() {
                 <Phone className="h-4 w-4" /> {SITE.phone}
               </a>
             </p>
-            <div className="mt-10 space-y-6">
-              {EXPECT.map((e, i) => (
-                <div key={e.t} className="flex gap-4">
-                  <p className="font-display text-2xl font-semibold text-brass-400/70">
-                    {i + 1}
+            <div className="mt-10 space-y-7">
+              {EXPECT.map((e) => (
+                <div key={e.t} className="border-l border-brass-400/40 pl-5">
+                  <h3 className="font-semibold">{e.t}</h3>
+                  <p className="mt-1.5 text-sm leading-relaxed text-cream-100/70">
+                    {e.b}
                   </p>
-                  <div>
-                    <h3 className="font-semibold">{e.t}</h3>
-                    <p className="mt-1 text-sm leading-relaxed text-cream-100/70">
-                      {e.b}
-                    </p>
-                  </div>
                 </div>
               ))}
             </div>

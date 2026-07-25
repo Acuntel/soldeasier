@@ -6,32 +6,32 @@ const SITUATIONS = [
   {
     href: "/stop-foreclosure",
     title: "Facing foreclosure",
-    body: "Behind on payments or served with a lis pendens? A fast cash sale can stop the clock and protect your equity before auction.",
+    body: "If you are behind on payments or holding a lis pendens, a fast cash sale can stop the clock and protect your equity before auction.",
   },
   {
     href: "/sell-inherited-house",
     title: "Inherited a property",
-    body: "Probate, out-of-state heirs, a house full of belongings — we handle the legal side and buy on your family's timeline.",
+    body: "We handle probate court, out-of-state heirs, and houses full of belongings, then buy the home on your family's timeline.",
   },
   {
     href: "/sell-house-divorce",
     title: "Divorce or separation",
-    body: "A clean, fast, discreet sale so both parties can move forward — no months of showings.",
+    body: "One clean and discreet sale lets both parties move forward without enduring months of showings.",
   },
   {
     href: "/sell-rental-property",
     title: "Tired landlord",
-    body: "Problem tenants, deferred maintenance, or just done with it? Sell with tenants in place, as-is.",
+    body: "Whether you have problem tenants or years of deferred maintenance, you can sell with tenants in place and never touch a repair.",
   },
   {
     href: "/sell-house-as-is",
     title: "Major repairs needed",
-    body: "Roof, foundation, fire or water damage — we buy homes in any condition and never ask you to fix a thing.",
+    body: "From tired roofs to fire and water damage, we buy homes in every condition and never ask you to fix a thing.",
   },
   {
     href: "/sell",
     title: "Relocating or downsizing",
-    body: "A guaranteed sale on your schedule, so your next chapter isn't held hostage by this one.",
+    body: "A guaranteed sale on your schedule means your next chapter is never held hostage by this one.",
   },
 ];
 
@@ -41,8 +41,9 @@ export default function Situations() {
       <div className="wrap">
         <Reveal>
           <p className="eyebrow mb-4">We can help when</p>
-          <h2 className="max-w-2xl font-display text-4xl font-semibold leading-tight text-ink-950 sm:text-5xl">
-            Life happens. Your sale shouldn&apos;t make it harder.
+          <h2 className="max-w-3xl font-display text-4xl font-semibold leading-tight text-ink-950 sm:text-5xl">
+            Whatever brought you here, the sale itself will be{" "}
+            <span className="italic text-brass-600">simple</span>
           </h2>
         </Reveal>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

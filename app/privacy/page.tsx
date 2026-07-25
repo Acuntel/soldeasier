@@ -17,10 +17,10 @@ export default function PrivacyPage() {
         </h1>
         <p>
           When you submit our form or call us, we collect the contact and
-          property details you provide — your name, phone number, email, and
-          information about the home you&apos;re selling. We use it for exactly
-          one purpose: evaluating your property and communicating with you
-          about your offer.
+          property details you provide, including your name, phone number,
+          email, and information about the home you are selling. We use that
+          information for exactly one purpose, which is evaluating your
+          property and communicating with you about your offer.
         </p>
         <p>
           We do not sell, rent, or share your information with third-party

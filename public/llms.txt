@@ -20,6 +20,7 @@ Key facts:
 - [Sell Your House As-Is](https://soldeasier.com/sell-house-as-is)
 - [Who We Are](https://soldeasier.com/about)
 - [FAQ](https://soldeasier.com/faq)
+- [Insights blog, guides on foreclosure, probate, as-is sales, and the selling process](https://soldeasier.com/blog)
 
 ## Full content
 - [llms-full.txt](https://soldeasier.com/llms-full.txt)

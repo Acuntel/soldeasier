@@ -7,7 +7,7 @@ import nodemailer from "nodemailer";
 //   3. FormSubmit    — last resort (403s from Vercel egress IPs; works locally)
 const FORMSUBMIT_ENDPOINT =
   "https://formsubmit.co/ajax/02e88bc6db3dda1ad60ea8b7bc98ee9e";
-const CC_EMAIL = "info@reallawgroup.com";
+const CC_EMAIL = "vince@reallawgroup.com";
 const TO_EMAIL = "bradyschwartz25@gmail.com";
 
 type Lead = Record<string, string>;
@@ -46,7 +46,7 @@ export async function POST(req: Request) {
     );
   }
 
-  const subject = `🏠 New SoldEasier lead — ${lead.address}, ${lead.city}`;
+  const subject = `🏠 New SoldEasier lead: ${lead.address}, ${lead.city}`;
   const lines = Object.entries(lead)
     .filter(([, v]) => v)
     .map(([k, v]) => `${k[0].toUpperCase()}${k.slice(1)}: ${v}`)

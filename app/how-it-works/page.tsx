@@ -4,35 +4,32 @@ import Reveal from "@/components/Reveal";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "How It Works — Cash Offer to Closing in 3 Steps",
+  title: "How It Works, From Cash Offer to Attorney-Managed Closing",
   description:
-    "How selling your Chicagoland house to SoldEasier works: tell us about the home, get a transparent cash offer in 24–48 hours, close on your date with an attorney-managed closing.",
+    "How selling your Chicagoland house to SoldEasier works: one conversation, a transparent cash offer within 48 hours, and an attorney-managed closing on the date you choose.",
   alternates: { canonical: "/how-it-works" },
 };
 
-const STEPS = [
+const STAGES = [
   {
-    n: "01",
-    title: "Tell us about the home",
+    title: "The first conversation",
     paras: [
-      "Fill out the two-minute form or call us directly. We'll ask about the address, the general condition, and your timeline — that's it. No documents to gather, no photos required.",
-      "Your information goes straight to Brady and Vince, not into a lead-resale marketplace. We'll call you back the same business day.",
+      "Fill out the two-minute form or call us directly, and tell us about the address, the general condition, and your timeline. There are no documents to gather and there are no photos required of you.",
+      "Your information goes straight to Brady and Vince rather than into a lead resale marketplace, and one of us will call you back the same business day.",
     ],
   },
   {
-    n: "02",
-    title: "Get a real number",
+    title: "The walkthrough and your written offer",
     paras: [
-      "We'll visit the property once, usually within 24–48 hours. Don't clean, don't fix, don't stage — we've seen everything and we price the work honestly.",
-      "You get a written cash offer with the math behind it: what the home would be worth updated, what it costs to get there, and our margin. Compare it against a listing, another buyer, anything. There's zero obligation and we never pressure a signature.",
+      "We visit the property once, usually within forty-eight hours, and you should not clean, fix, or stage anything before we arrive. We have seen every condition imaginable and we price the work honestly.",
+      "You then receive a written cash offer with the math behind it, meaning what the home would be worth fully updated, what the work truly costs, and our margin. Compare it against a listing or against any other offer, because there is zero obligation and we never pressure a signature.",
     ],
   },
   {
-    n: "03",
-    title: "Close on your timeline",
+    title: "Closing day on your schedule",
     paras: [
-      "Once you accept, REAL Law Group, P.C. prepares the entire closing — title, payoffs, liens, municipal requirements, probate or foreclosure complications included. You'll always know exactly what happens next.",
-      "Close in as little as two weeks, or pick a date months out if you need time. At closing you get your proceeds — and unlike financed buyers, cash never falls through at the last minute.",
+      "Once you accept, REAL Law Group, P.C. prepares the entire closing, including title, payoffs, liens, municipal requirements, and any probate or foreclosure complications along the way. You will always know exactly what happens next.",
+      "You can close in as little as two weeks or pick a date months away if you need the time. Because we pay cash, the sale never falls through at the last minute, and you walk away with your proceeds on the day you chose.",
     ],
   },
 ];
@@ -54,22 +51,22 @@ export default function HowItWorksPage() {
       <section className="bg-ink-950 pb-16 pt-36 text-cream-50">
         <div className="wrap">
           <p className="eyebrow mb-4 !text-brass-300">How it works</p>
-          <h1 className="max-w-3xl font-display text-4xl font-semibold leading-tight sm:text-5xl">
-            From first call to cash in hand — without the circus.
+          <h1 className="max-w-3xl font-display text-4xl font-semibold leading-[1.15] sm:text-5xl">
+            From the first call to cash in{" "}
+            <span className="italic text-brass-300">hand</span>
           </h1>
+          <div className="mt-7 h-px w-24 bg-brass-400/60" />
         </div>
       </section>
 
       <section className="py-16 sm:py-24">
         <div className="wrap space-y-14">
-          {STEPS.map((s, i) => (
-            <Reveal key={s.n} delay={i * 0.05}>
+          {STAGES.map((s, i) => (
+            <Reveal key={s.title} delay={i * 0.05}>
               <div className="grid gap-6 border-b border-cream-200 pb-14 last:border-0 lg:grid-cols-3">
                 <div>
-                  <p className="font-display text-6xl font-semibold text-brass-400/50">
-                    {s.n}
-                  </p>
-                  <h2 className="mt-2 font-display text-3xl font-semibold text-ink-950">
+                  <div className="mb-4 h-px w-16 bg-brass-500/70" />
+                  <h2 className="font-display text-3xl font-semibold leading-snug text-ink-950">
                     {s.title}
                   </h2>
                 </div>
@@ -84,7 +81,7 @@ export default function HowItWorksPage() {
           <Reveal>
             <div className="text-center">
               <Link href="/sell" className="btn-gold">
-                Start with step one
+                Start the conversation
               </Link>
             </div>
           </Reveal>

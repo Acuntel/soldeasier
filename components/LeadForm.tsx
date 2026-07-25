@@ -43,11 +43,11 @@ export default function LeadForm() {
       <div className="rounded-2xl border border-brass-400 bg-white p-10 text-center">
         <CheckCircle2 className="mx-auto h-10 w-10 text-brass-500" />
         <h3 className="mt-4 font-display text-2xl font-semibold text-ink-950">
-          Got it — we&apos;re on it.
+          We received your details and we are on it
         </h3>
         <p className="mx-auto mt-3 max-w-sm text-ink-700">
-          We&apos;ll reach out the same business day. Want to talk sooner? Call
-          us right now at{" "}
+          We will reach out the same business day. If you would like to talk
+          sooner, call us right now at{" "}
           <a href={SITE.phoneHref} className="font-semibold text-brass-600">
             {SITE.phone}
           </a>
@@ -133,12 +133,13 @@ export default function LeadForm() {
       </button>
       {status === "error" && (
         <p className="mt-3 text-center text-sm text-red-600">
-          Something went wrong — please call us at {SITE.phone} instead.
+          Something went wrong on our end, so please call us directly at{" "}
+          {SITE.phone}.
         </p>
       )}
       <p className="mt-4 text-center text-xs leading-relaxed text-ink-500">
-        No obligation, no fees, no spam. We&apos;ll only use this to prepare
-        your offer.
+        There is no obligation, no fee, and no spam, and we only use this
+        information to prepare your offer.
       </p>
     </form>
   );

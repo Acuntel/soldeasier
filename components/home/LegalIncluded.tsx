@@ -17,13 +17,14 @@ export default function LegalIncluded() {
         <Reveal className="order-2 lg:order-1">
           <p className="eyebrow mb-4">The law firm is built in</p>
           <h2 className="font-display text-4xl font-semibold leading-tight text-ink-950 sm:text-5xl">
-            The complex work? Included.
+            The complicated legal work comes{" "}
+            <span className="italic text-brass-600">included</span>
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-ink-700">
             Most cash buyers hand you a contract and wish you luck with the
-            paperwork. SoldEasier is different: our closings are prepared and
-            managed by REAL Law Group, P.C. — an Elmhurst real-estate law firm
-            with deep experience in distressed and complicated transactions.
+            paperwork. Every SoldEasier closing is prepared and managed by REAL
+            Law Group, P.C., an Elmhurst real estate law firm with deep
+            experience in distressed and complicated transactions.
           </p>
           <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
             {COVERED.map((t) => (
@@ -36,7 +37,7 @@ export default function LegalIncluded() {
             ))}
           </ul>
           <p className="mt-6 text-sm leading-relaxed text-ink-500">
-            Sellers are always welcome to bring their own attorney — we&apos;ll
+            Sellers are always welcome to bring their own attorney, and we will
             coordinate with them directly.
           </p>
         </Reveal>
