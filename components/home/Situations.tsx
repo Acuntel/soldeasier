@@ -1,0 +1,72 @@
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import Reveal from "@/components/Reveal";
+
+const SITUATIONS = [
+  {
+    href: "/stop-foreclosure",
+    title: "Facing foreclosure",
+    body: "Behind on payments or served with a lis pendens? A fast cash sale can stop the clock and protect your equity before auction.",
+  },
+  {
+    href: "/sell-inherited-house",
+    title: "Inherited a property",
+    body: "Probate, out-of-state heirs, a house full of belongings — we handle the legal side and buy on your family's timeline.",
+  },
+  {
+    href: "/sell-house-divorce",
+    title: "Divorce or separation",
+    body: "A clean, fast, discreet sale so both parties can move forward — no months of showings.",
+  },
+  {
+    href: "/sell-rental-property",
+    title: "Tired landlord",
+    body: "Problem tenants, deferred maintenance, or just done with it? Sell with tenants in place, as-is.",
+  },
+  {
+    href: "/sell-house-as-is",
+    title: "Major repairs needed",
+    body: "Roof, foundation, fire or water damage — we buy homes in any condition and never ask you to fix a thing.",
+  },
+  {
+    href: "/sell",
+    title: "Relocating or downsizing",
+    body: "A guaranteed sale on your schedule, so your next chapter isn't held hostage by this one.",
+  },
+];
+
+export default function Situations() {
+  return (
+    <section className="bg-cream-100 py-20 sm:py-28">
+      <div className="wrap">
+        <Reveal>
+          <p className="eyebrow mb-4">We can help when</p>
+          <h2 className="max-w-2xl font-display text-4xl font-semibold leading-tight text-ink-950 sm:text-5xl">
+            Life happens. Your sale shouldn&apos;t make it harder.
+          </h2>
+        </Reveal>
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {SITUATIONS.map((s, i) => (
+            <Reveal key={s.title} delay={(i % 3) * 0.08}>
+              <Link
+                href={s.href}
+                className="group flex h-full flex-col rounded-2xl border border-cream-200 bg-white p-7 transition hover:border-brass-400 hover:shadow-lg hover:shadow-ink-950/5"
+              >
+                <h3 className="text-lg font-semibold text-ink-950">
+                  {s.title}
+                </h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-700">
+                  {s.body}
+                </p>
+                <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brass-600">
+                  Learn more{" "}
+                  <ArrowRight className="h-3.5 w-3.5 transition group-hover:translate-x-0.5" />
+                </span>
+              </Link>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

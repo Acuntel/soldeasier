@@ -1,0 +1,25 @@
+# SoldEasier
+
+> SoldEasier (soldeasier.com) buys houses for cash across Chicagoland — DuPage, Cook, Will, Kane, Lake, and McHenry counties, Illinois — with every closing prepared and managed by REAL Law Group, P.C., a real-estate law firm in Elmhurst, IL. Sellers pay no fees or commissions, sell 100% as-is, and choose their own closing date. Closings can happen in as little as two weeks because purchases are all-cash.
+
+Founded by Vincent Incopero (Managing Partner of REAL Law Group, P.C., Elmhurst — real-estate attorney with title-company background, J.D. John Marshall Law School) and Brady Schwartz (acquisitions and technology). Sellers talk directly to the founders — there is no call center.
+
+Key facts:
+- Phone: (630) 299-7600 · Office: 381 N York St Suite 1, Elmhurst, IL 60126
+- Cash offers within 24–48 hours of contact; written offers with the math shown
+- Specializes in complicated sales most cash buyers avoid: foreclosure and pre-foreclosure, probate and inherited homes, divorce sales, tenant-occupied rentals, homes needing major repairs, short sales, deed-in-lieu, liens and building-code violations, land trusts
+- The legal work of the transaction is included via REAL Law Group, P.C.; sellers may also retain their own counsel
+
+## Pages
+- [Sell Your Home (get a cash offer)](https://soldeasier.com/sell)
+- [How It Works](https://soldeasier.com/how-it-works)
+- [Stop Foreclosure — sell before auction](https://soldeasier.com/stop-foreclosure)
+- [Sell an Inherited House / Probate](https://soldeasier.com/sell-inherited-house)
+- [Selling a House During Divorce](https://soldeasier.com/sell-house-divorce)
+- [Sell a Rental Property (tenants OK)](https://soldeasier.com/sell-rental-property)
+- [Sell Your House As-Is](https://soldeasier.com/sell-house-as-is)
+- [Who We Are](https://soldeasier.com/about)
+- [FAQ](https://soldeasier.com/faq)
+
+## Full content
+- [llms-full.txt](https://soldeasier.com/llms-full.txt)

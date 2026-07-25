@@ -1,0 +1,45 @@
+export const SITE = {
+  name: "SoldEasier",
+  legalName: "SoldEasier",
+  domain: "soldeasier.com",
+  url: "https://soldeasier.com",
+  tagline: "Sell your home. Easier.",
+  description:
+    "SoldEasier buys houses for cash across Chicagoland — attorney-backed closings through REAL Law Group, P.C., no fees, no repairs, no listings. Sell your house as-is on the date you choose.",
+  phone: "(630) 299-7600",
+  phoneHref: "tel:+16302997600",
+  email: "info@reallawgroup.com",
+  address: {
+    street: "381 N York St Suite 1",
+    city: "Elmhurst",
+    state: "IL",
+    zip: "60126",
+  },
+  serviceCounties: ["DuPage", "Cook", "Will", "Kane", "Lake", "McHenry"],
+  serviceTowns: [
+    "Elmhurst",
+    "Villa Park",
+    "Lombard",
+    "Addison",
+    "Oak Brook",
+    "Hinsdale",
+    "Downers Grove",
+    "Wheaton",
+    "Glen Ellyn",
+    "Naperville",
+    "Berwyn",
+    "Oak Park",
+    "Westchester",
+    "Bellwood",
+    "Hillside",
+    "Northlake",
+    "La Grange",
+    "Park Ridge",
+  ],
+} as const;
+
+export const NAV_LINKS = [
+  { href: "/how-it-works", label: "How It Works" },
+  { href: "/about", label: "Who We Are" },
+  { href: "/faq", label: "FAQ" },
+] as const;
