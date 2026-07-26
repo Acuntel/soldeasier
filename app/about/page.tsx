@@ -6,7 +6,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Who We Are, the Two People Behind SoldEasier",
   description:
-    "SoldEasier is Vincent Incopero and Brady Schwartz, two local Elmhurst buyers who make immediate offers, manage every closing themselves, and give straight answers.",
+    "SoldEasier is Vincent Incopero and Brady Schwartz, two local west-suburban buyers who make immediate offers, manage every closing themselves, and give straight answers.",
   alternates: { canonical: "/about" },
 };
 
@@ -35,7 +35,7 @@ export default function AboutPage() {
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-cream-100/80">
             SoldEasier exists because selling a house during a hard season
             should never require a call center, a wholesaler, and a leap of
-            faith. We are a deliberately small local team based in Elmhurst,
+            faith. We are a deliberately small local team based in Berkeley,
             and we answer our own phone.
           </p>
         </div>
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 </p>
                 <p className="text-sm text-ink-500">
                   B.S. Finance & Economics, Elmhurst College · Based in
-                  Elmhurst, Illinois
+                  Berkeley, Illinois
                 </p>
               </div>
             </div>
@@ -115,7 +115,7 @@ export default function AboutPage() {
               </h2>
               <p className="mt-4 max-w-3xl leading-relaxed text-cream-100/80">
                 The big national buyers process addresses while we know the
-                blocks. We live and work here in Elmhurst and the western
+                blocks. We live and work here in Berkeley and the western
                 suburbs, and our reputation rides on every single closing. That
                 is why there are no re-trades, no assignment games, and no
                 pressure tactics. You get a fair number, a firm handshake, and

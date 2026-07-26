@@ -120,7 +120,7 @@ export default function Footer() {
             © {new Date().getFullYear()} {SITE.name}. All rights reserved.
           </p>
           <p>
-            SoldEasier is based in Elmhurst, Illinois, and buys homes across
+            SoldEasier is based in Berkeley, Illinois, and buys homes across
             the Chicagoland suburbs directly from their owners.
           </p>
         </div>

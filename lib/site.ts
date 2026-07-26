@@ -10,10 +10,10 @@ export const SITE = {
   phoneHref: "tel:+18472122142",
   email: "vincent@reallawgroup.com",
   address: {
-    street: "381 N York St Suite 1",
-    city: "Elmhurst",
+    street: "5646 St Charles Road, Suite D",
+    city: "Berkeley",
     state: "IL",
-    zip: "60126",
+    zip: "60163",
   },
   serviceCounties: ["DuPage", "Cook", "Will", "Kane", "Lake", "McHenry"],
   serviceTowns: [
